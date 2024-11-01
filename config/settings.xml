@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="h4a:settings" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/settings.xsd">
+    <options slug="currency"/>
+    <options slug="paypal"/>
+    <options slug="profile-page"/>
+    <options slug="premium"/>
+</settings>

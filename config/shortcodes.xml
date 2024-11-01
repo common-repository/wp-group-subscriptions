@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shortcodes xmlns="h4a:shortcodes" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/shortcodes.xsd" >
+    <shortcode slug="plans-list" tag="wgs-plans" class="H4APlugin\WPGroupSubs\Shortcodes\PlansListShortcode" />
+    <shortcode slug="plan-form" tag="wgs-form" class="H4APlugin\WPGroupSubs\Shortcodes\PlanFormsShortcode" />
+    <shortcode slug="payment-return" tag="wgs-return" class="H4APlugin\WPGroupSubs\Shortcodes\PaymentReturnShortcode" />
+    <shortcode slug="account-activation" tag="wgs-activation" class="H4APlugin\WPGroupSubs\Shortcodes\ActivationShortcode" />
+    <shortcode slug="login" tag="wgs-login" class="H4APlugin\WPGroupSubs\Shortcodes\LoginShortcode" />
+    <shortcode slug="content-restricted" tag="wgs-restricted" class="H4APlugin\WPGroupSubs\Shortcodes\RestrictedContentShortcode" />
+    <shortcode slug="profile" tag="wgs-profile" class="H4APlugin\WPGroupSubs\Shortcodes\MyProfileShortcode" />
+    <shortcode slug="profile-account" tag="wgs-profile-account" class="H4APlugin\WPGroupSubs\Shortcodes\ProfileAccountShortcode" />
+    <shortcode slug="profile-subscription" tag="wgs-profile-subscription" class="H4APlugin\WPGroupSubs\Shortcodes\ProfileSubscriptionShortcode" />
+</shortcodes>

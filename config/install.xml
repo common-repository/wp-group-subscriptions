@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install xmlns="h4a:install" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/install.xsd" >
+    <database>
+        <tables>
+            <table name="forms">
+                <column name="plan_type"       type="enum( 'single', 'multiple' )" />
+            </table>
+            <table name="plans">
+                <column name="plan_id"         type="bigint(20)"   not_null="true" key="primary" a_i="true" />
+                <column name="user_id"         type="bigint(20)"   not_null="true" />
+                <column name="plan_name"       type="varchar(50)"  not_null="true" key="unique" />
+                <column name="post_id"         type="bigint(20)" />
+                <column name="plan_type"       type="enum( 'single', 'multiple' )" not_null="true" />
+                <column name="form_type_id"    type="int(40)" />
+                <column name="members_max"     type="smallint(4)" />
+                <column name="members_min"     type="smallint(4)"  not_null="true" />
+                <column name="start_date"      type="datetime"     not_null="true" />
+                <column name="duration_type"   type="ENUM( 'day', 'month', 'year', 'date', 'unlimited' )" not_null="true" />
+                <column name="expiration_date" type="date" />
+                <column name="duration_value"  type="smallint(4)"  unsigned="true"/>
+                <column name="status"          type="enum( 'published', 'hidden', 'draft', 'trash' )" not_null="true" default="draft" />
+                <column name="price"           type="decimal(6,2)" not_null="true" default="0.00" />
+                <column name="publish_date"    type="datetime" />
+            </table>
+            <table name="subscribers">
+                <column name="subscriber_id"   type="bigint(40)"   not_null="true" key="primary" a_i="true" />
+                <column name="first_name"      type="varchar(35)"  not_null="true" />
+                <column name="last_name"       type="varchar(35)"  not_null="true" />
+                <column name="email"           type="varchar(40)"  not_null="true" key="unique" />
+                <column name="password"        type="varchar(255)" not_null="true" />
+                <column name="phone_code"      type="varchar(5)" />
+                <column name="phone_number"    type="varchar(20)" />
+                <column name="group_name"      type="varchar(40)" />
+                <column name="street_number"   type="varchar(6)"   not_null="true" />
+                <column name="street_name"     type="varchar(100)" not_null="true" />
+                <column name="zip_code"        type="varchar(15)"  not_null="true" />
+                <column name="city"            type="varchar(50)"  not_null="true" />
+                <column name="country_id"      type="int(3)"       not_null="true" />
+                <column name="plan_id"         type="bigint(20)"   not_null="true" />
+                <column name="status"          type="enum( 'active', 'disabled', 'trash' )"  not_null="true" />
+                <column name="start_date"      type="datetime"     not_null="true" />
+                <column name="last_subscription_date" type="datetime" />
+                <keys>
+                    <index  name="plan_id" col_name="plan_id" />
+                </keys>
+            </table>
+            <table name="members">
+                <column name="member_id"       type="bigint(80)"   not_null="true" key="primary" a_i="true" />
+                <column name="first_name"      type="varchar(35)" />
+                <column name="last_name"       type="varchar(35)" />
+                <column name="email"           type="varchar(40)"  not_null="true" key="unique" />
+                <column name="password"        type="varchar(255)" not_null="true" />
+                <column name="start_date"      type="datetime"     not_null="true" />
+                <column name="last_connection" type="datetime" />
+                <column name="last_activation" type="datetime" />
+                <column name="status"          type="enum( 'published', 'trash' )" not_null="true" />
+                <column name="subscriber_id"   type="bigint(20)"   not_null="true" />
+                <keys>
+                    <index name="subscriber_id" col_name="subscriber_id" />
+                </keys>
+            </table>
+            <table name="payments">
+                <column name="payment_id"      type="bigint(80)"  not_null="true" key="primary" a_i="true" />
+                <column name="txn_id"          type="varchar(20)" key="unique"/>
+                <column name="plan_id"         type="bigint(20)"  />
+                <column name="subscriber_id"   type="bigint(40)"  />
+                <column name="email"           type="varchar(40)" not_null="true" />
+                <column name="amount"          type="varchar(10)" not_null="true" />
+                <column name="payment_status"  type="enum( 'Canceled_Reversal', 'Completed', 'Created', 'Denied', 'Expired', 'Failed', 'Pending', 'Refunded', 'Reversed', 'Processed', 'Voided' )" not_null="true" />
+                <column name="pending_reason"  type="enum( 'address', 'authorization', 'delayed_disbursement', 'echeck', 'intl', 'multi_currency', 'order', 'paymentreview', 'regulatory_review', 'unilateral', 'upgrade', 'verify', 'other' )" />
+                <column name="payment_type"    type="enum( 'paypal', 'unknown' )" not_null="true" />
+                <column name="payment_date"    type="datetime"    not_null="true" />
+                <keys>
+                    <index name="email"       col_name="email" />
+                </keys>
+            </table>
+        </tables>
+        <inserts>
+            <insert table="forms">
+                <data office="back"
+                      form_type="plan-edition"
+                      form_type_id="1"
+                      user_id="CURRENT"
+                      name="edit-plan"
+                      html_id="wgs-admin-edit-plan"
+                      start_date="NOW"
+                />
+                <data office="back"
+                      form_type="member-edition"
+                      form_type_id="1"
+                      user_id="CURRENT"
+                      name="edit-member"
+                      html_id="wgs-admin-edit-member"
+                      start_date="NOW"
+                />
+                <!--<data office="both" 
+                      form_type="subscriber-edition" 
+                      form_type_id="3" 
+                      user_id="CURRENT"
+                      name="edit-subscriber"
+                      html_id="wgs-admin-edit-subscriber"
+                      start_date="NOW" 
+                />-->
+                <data office="front"
+                      form_type="activation-account"
+                      form_type_id="1"
+                      user_id="CURRENT"
+                      name="activation-account"
+                      html_id="wgs-sign-in-member"
+                      start_date="NOW"
+                />
+                <data office="front"
+                      form_type="sign-in"
+                      form_type_id="1"
+                      user_id="CURRENT"
+                      name="sign-in"
+                      html_id="wgs-sign-in-member"
+                      start_date="NOW"
+                />
+                <data office="front"
+                      form_type="sign-out"
+                      form_type_id="1"
+                      user_id="CURRENT"
+                      name="sign-out"
+                      html_id ="wgs-sign-out-member"
+                      start_date="NOW"
+                />
+                <data office="front"
+                      form_type="members-account-creation"
+                      form_type_id="1"
+                      user_id="CURRENT"
+                      name="create-members"
+                      title_display="Member accounts creation"
+                      html_id ="wgs-form-multiple-members"
+                      start_date="NOW"
+                />
+                <data office="both"
+                      form_type="member-activation-account"
+                      form_type_id="1"
+                      user_id="CURRENT"
+                      name="member-activation-account"
+                      html_id ="wgs-form-member-activation-account"
+                      start_date="NOW"
+                />
+                <data office="both"
+                      form_type="plan-subscription"
+                      form_type_id="1"
+                      user_id="CURRENT"
+                      name="Basic single subscription form"
+                      title_display ="Account creation"
+                      html_id ="wgs-form-single-subscription"
+                      plan_type="single"
+                      start_date="NOW"
+                />
+                <data office="both"
+                      form_type="plan-subscription"
+                      form_type_id="2"
+                      user_id="CURRENT"
+                      name="Basic multiple subscription form"
+                      title_display ="Creation of the subscription account"
+                      html_id ="wgs-form-multiple-subscription"
+                      plan_type="multiple"
+                      start_date="NOW"
+                />
+            </insert>
+            <insert table="form_wrappers">
+                <data form_type="activation-account" form_type_id="1" wrapper_type="hidden" form_order="0" />
+                <data form_type="sign-in" form_type_id="1" wrapper_type="fieldset" legend="First sign in" form_order="0"/>
+                <data form_type="members-account-creation"  form_type_id="1" wrapper_type="div" form_order="0"/>
+                <data form_type="members-account-creation" form_type_id="1" wrapper_type="fieldset" html_id="wgs-wrapper-emails" form_order="1"/>
+                <data form_type="member-activation-account" form_type_id="1" wrapper_type="fieldset" legend="Member account information" html_id="wgs-wrapper-member-info" form_order="0"/>
+                <data form_type="plan-edition" form_type_id="1" wrapper_type="hidden" form_order="0" />
+                <data form_type="plan-edition" form_type_id="1" wrapper_type="table" form_order="1" />
+                <!-- Basic single plan -->
+                <data form_type="plan-subscription" form_type_id="1" wrapper_type="fieldset" legend="Log in information" form_order="0"/>
+                <data form_type="plan-subscription" form_type_id="1" wrapper_type="fieldset" legend="Identity" form_order="1"/>
+                <data form_type="plan-subscription" form_type_id="1" wrapper_type="fieldset" legend="Address" form_order="2"/>
+                <!-- Basic multiple plan -->
+                <data form_type="plan-subscription" form_type_id="2" wrapper_type="fieldset" legend="Representative" form_order="0"/>
+                <data form_type="plan-subscription" form_type_id="2" wrapper_type="fieldset" legend="Group" form_order="1"/>
+            </insert>
+            <insert table="form_items">
+                <!-- hidden -->
+                <data form_item_ref="hidden_basic" form_item_type="hidden" />
+                <!-- text -->
+                <data form_item_ref="text_basic"         form_item_type="text" pattern="[^&lt;&gt;|?=\\\\]*" required="0" />
+                <data form_item_ref="text_readonly"      form_item_type="text" required="0" readonly="1" />
+                <data form_item_ref="text_required"      form_item_type="text" pattern="[^&lt;&gt;|?!=\\\\]*" required="1" />
+                <data form_item_ref="text_name_required" form_item_type="text" pattern="[^&lt;&gt;|?!=\\\\,;:]*" required="1" />
+                <!-- links -->
+                <data form_item_ref="link_blank"      form_item_type="link" />
+                <!-- number -->
+                <data form_item_ref="number_basic"    form_item_type="number" required="0" />
+                <data form_item_ref="number_required" form_item_type="number" required="1" />
+                <!-- email -->
+                <data form_item_ref="email_basic"     form_item_type="email" required="1" />
+                <!-- password -->
+                <data form_item_ref="password_basic"  form_item_type="password" required="1" />
+                <!-- date -->
+                <data form_item_ref="date_basic"      form_item_type="date" required="0" />
+                <!-- labels & titles -->
+                <data form_item_ref="label_basic"          form_item_type="label" required="0" />
+                <data form_item_ref="label_required"       form_item_type="label" required="1" />
+                <data form_item_ref="label_title"          form_item_type="title" required="0" />
+                <data form_item_ref="label_title_required" form_item_type="title" required="1" />
+                <!-- select -->
+                <data form_item_ref="select_country"          form_item_type="select" required="0" function_options="H4APlugin\\Core\\Common\\Countries::getCountries#true" />
+                <data form_item_ref="select_country_required" form_item_type="select" required="1" function_options="H4APlugin\\Core\\Common\\Countries::getCountries" />
+                <data form_item_ref="select_time_type"        form_item_type="select" required="0" function_options="H4APlugin\\Core\\getTimeTypes" />
+                <data form_item_ref="select_min_members"      form_item_type="select" required="0" />
+                <data form_item_ref="select_max_members"      form_item_type="select" required="0" />
+                <data form_item_ref="select_plan_forms"       form_item_type="select" required="0" />
+                <!-- checkboxes -->
+                <data form_item_ref="checkbox_basic"    form_item_type="checkbox" required="0" />
+                <data form_item_ref="checkbox_required" form_item_type="checkbox" required="1" />
+                <!-- radio buttons -->
+                <data form_item_ref="radio_basic"    form_item_type="radio" required="0" />
+                <data form_item_ref="radio_required" form_item_type="radio" required="1" />
+                <!-- textarea -->
+                <data form_item_ref="textarea_basic"     form_item_type="textarea" required="0" />
+                <data form_item_ref="textarea_wp_editor" form_item_type="textarea" required="0" />
+            </insert>
+            <insert table="form_strings">
+                <!-- Paypal -->
+                <data string_ref="p_charset"       html_name="charset" html_value="utf-8"/>
+                <data string_ref="p_cmd"           html_name="cmd"     html_value="_xclick"/>
+                <data string_ref="p_business"      html_name="business" />
+                <data string_ref="p_item_name"     html_name="item_name" />
+                <data string_ref="p_amount"        html_name="amount" />
+                <data string_ref="p_currency_code" html_name="currency_code" />
+                <data string_ref="p_first_name"    html_name="first_name" />
+                <data string_ref="p_last_name"     html_name="last_name" />
+                <data string_ref="p_address1"      html_name="address1" />
+                <data string_ref="p_city"          html_name="city" />
+                <data string_ref="p_zip"           html_name="zip" />
+                <data string_ref="p_country"       html_name="country" />
+                <data string_ref="p_cancel"        html_name="cancel" />
+                <data string_ref="p_return"        html_name="return" />
+                <data string_ref="p_rm"            html_name="rm" html_value="2" />
+                <!-- Email & Password -->
+                <data string_ref="f_email"        html_name="wgs_f_email"      html_placeholder="Please insert your email"     html_id="wgs_f_email"     html_label="Email" />
+                <data string_ref="f_email_r"      html_name="wgs_f_email_r"    html_placeholder="Please confirm your email"    html_id="wgs_f_email_r" />
+                <data string_ref="f_email_hidden" html_name="wgs_f_email_r"    html_placeholder="Please confirm your email"                              html_label="Email" />
+                <data string_ref="f_password"     html_name="wgs_f_password"   html_placeholder="Please insert your password"  html_id="wgs_f_password"  html_label="Password" />
+                <data string_ref="f_password_r"   html_name="wgs_f_password_r" html_placeholder="Please confirm your password" html_id="wgs_f_password_r" />
+                <!-- Names -->
+                <data string_ref="f_last_name"  html_name="wgs_f_last_name"  html_id="wgs_f_last_name"  html_label="Last Name"/>
+                <data string_ref="f_first_name" html_name="wgs_f_first_name" html_id="wgs_f_first_name" html_label="First Name"/>
+                <!-- Phone -->
+                <data string_ref="f_phone_label"        html_id="wgs_f_phone_number"                                       html_label="Phone number"/>
+                <data string_ref="f_phone_code_select"  html_id="wgs_f_phone_code_sel" html_name="wgs_f_phone_code_sel"/>
+                <data string_ref="f_phone_code_input"   html_id="wgs_f_phone_code"     html_name="wgs_f_phone_code"/>
+                <data string_ref="f_phone_number"       html_id="wgs_f_phone_number"   html_name="wgs_f_phone_number"/>
+                <!-- Address -->
+                <data string_ref="f_address_number"        html_id="wgs_f_street_number"   html_name="wgs_f_street_number" html_label="Number"/>
+                <data string_ref="f_address_street"        html_id="wgs_f_street_name"     html_name="wgs_f_street_name"   html_label="Street"/>
+                <data string_ref="f_address_zip"           html_id="wgs_f_zip_code"        html_name="wgs_f_zip_code"      html_label="Zip code"/>
+                <data string_ref="f_address_city"          html_id="wgs_f_city"            html_name="wgs_f_city"          html_label="City"/>
+                <data string_ref="f_address_country_label" html_id="wgs_f_country"                                         html_label="Country"/>
+                <data string_ref="f_address_country_input" html_id="wgs_f_country"         html_name="wgs_f_country" />
+                <!-- Group -->
+                <data string_ref="f_group_name" html_id="wgs_f_group_name" html_name="wgs_f_group_name" html_label="Group Name" />
+                <!-- Plan -->
+                <data string_ref="f_post_id"                                                                                                      html_name="wgs_f_post_id" />
+                <data string_ref="f_price_label"             html_label="Price" />
+                <data string_ref="f_price_symbol"            html_label="Currency"                    html_id="wgs_f_price" />
+                <data string_ref="f_price_input"                                                      html_id="wgs_f_price"                       html_name="wgs_f_price" />
+                <data string_ref="f_change_device_link"      html_label="Change currency"             html_id="wgs_f_change_currency" />
+                <data string_ref="f_free"                    html_label="Free"                        html_id="wgs_f_is_free"                     html_name="wgs_f_is_free"                   html_value="free_plan" />
+                <data string_ref="f_plan_duration_label"     html_label="Plan duration" />
+                <data string_ref="f_plan_duration_radio_1"   html_label="Plan duration"               html_id="wgs_f_plan_duration_value"         html_name="wgs_f_plan_duration"             html_value="delay" />
+                <data string_ref="f_plan_duration_number"                                             html_id="wgs_f_plan_duration_number"        html_name="wgs_f_plan_duration_number" />
+                <data string_ref="f_plan_duration_time_type"                                          html_id="wgs_f_plan_duration_time_type"     html_name="wgs_f_plan_duration_time_type" />
+                <data string_ref="f_plan_duration_radio_2"   html_label="Valid until"                 html_id="wgs_f_plan_duration_until"         html_name="wgs_f_plan_duration"              html_value="date" />
+                <data string_ref="f_plan_duration_date"                                               html_id="wgs_f_plan_duration_date"          html_name="wgs_f_plan_duration_date" />
+                <data string_ref="f_plan_duration_radio_3"   html_label="Unlimited"                   html_id="wgs_f_plan_duration_unlimited"     html_name="wgs_f_plan_duration"              html_value="unlimited" />
+                <data string_ref="f_plan_type"               html_label="Plan type" />
+                <data string_ref="f_plan_single_radio"       html_label="Single"                      html_id="wgs_f_plan_type_single"            html_name="wgs_f_plan_type"                  html_value="single" />
+                <data string_ref="f_plan_multiple_radio"     html_label="Group"                       html_id="wgs_f_plan_type_multiple"          html_name="wgs_f_plan_type"                  html_value="multiple" />
+                <data string_ref="f_plan_multiple_min"       html_label="Minimum of member accounts"  html_id="wgs_f_number_min_member_accounts"  html_name="wgs_f_number_min_member_accounts" html_value="2" />
+                <data string_ref="f_plan_multiple_max"       html_label="Maximum of member accounts"  html_id="wgs_f_number_max_member_accounts"  html_name="wgs_f_number_max_member_accounts" html_value="2" />
+                <data string_ref="f_change_ceiling"          html_label="Change ceiling"              html_id="wgs_f_change_ceiling" />
+                <data string_ref="f_form_plan_label"         html_label="Account Creation Form"       html_id="wgs_f_plan_form" />
+                <data string_ref="f_form_plan"                                                        html_id="wgs_f_plan_form"                   html_name="wgs_f_plan_form" />
+                <data string_ref="f_new_form_plan_link"      html_label="New form plan"               html_id="wgs_f_new_form_plan" />
+            </insert>
+            <insert table="form_item_links">
+                <!-- Basic single subscription -->
+                <data string_ref="f_email"                 form_item_ref="email_basic"             form_type="plan-subscription" form_type_id="1" wrapper_id="1" form_item_row="1" form_item_col="1" col_size="6" />
+                <data string_ref="f_email_r"               form_item_ref="email_basic"             form_type="plan-subscription" form_type_id="1" wrapper_id="1" form_item_row="1" form_item_col="2" col_size="6" />
+                <data string_ref="f_password"              form_item_ref="password_basic"          form_type="plan-subscription" form_type_id="1" wrapper_id="1" form_item_row="2" form_item_col="1" col_size="6" />
+                <data string_ref="f_password_r"            form_item_ref="password_basic"          form_type="plan-subscription" form_type_id="1" wrapper_id="1" form_item_row="2" form_item_col="2" col_size="6" />
+                <data string_ref="f_last_name"             form_item_ref="text_name_required"      form_type="plan-subscription" form_type_id="1" wrapper_id="2" form_item_row="1" form_item_col="1" col_size="8" />
+                <data string_ref="f_first_name"            form_item_ref="text_name_required"      form_type="plan-subscription" form_type_id="1" wrapper_id="2" form_item_row="1" form_item_col="2" col_size="4" />
+                <data string_ref="f_phone_label"           form_item_ref="label_basic"             form_type="plan-subscription" form_type_id="1" wrapper_id="2" form_item_row="2" form_item_col="1" col_size="4" />
+                <data string_ref="f_phone_code_select"     form_item_ref="select_country"          form_type="plan-subscription" form_type_id="1" wrapper_id="2" form_item_row="2" form_item_col="2" col_size="8" />
+                <data string_ref="f_phone_code_input"      form_item_ref="text_readonly"           form_type="plan-subscription" form_type_id="1" wrapper_id="2" form_item_row="3" form_item_col="1" col_size="3" />
+                <data string_ref="f_phone_number"          form_item_ref="number_basic"            form_type="plan-subscription" form_type_id="1" wrapper_id="2" form_item_row="3" form_item_col="2" col_size="7" />
+                <data string_ref="f_address_number"        form_item_ref="text_basic"              form_type="plan-subscription" form_type_id="1" wrapper_id="3" form_item_row="1" form_item_col="1" col_size="2" />
+                <data string_ref="f_address_street"        form_item_ref="text_required"           form_type="plan-subscription" form_type_id="1" wrapper_id="3" form_item_row="1" form_item_col="2" col_size="10"/>
+                <data string_ref="f_address_zip"           form_item_ref="text_required"           form_type="plan-subscription" form_type_id="1" wrapper_id="3" form_item_row="2" form_item_col="1" col_size="4" />
+                <data string_ref="f_address_city"          form_item_ref="text_required"           form_type="plan-subscription" form_type_id="1" wrapper_id="3" form_item_row="2" form_item_col="2" col_size="8" />
+                <data string_ref="f_address_country_label" form_item_ref="label_required"          form_type="plan-subscription" form_type_id="1" wrapper_id="3" form_item_row="3" form_item_col="1" col_size="2" />
+                <data string_ref="f_address_country_input" form_item_ref="select_country_required" form_type="plan-subscription" form_type_id="1" wrapper_id="3" form_item_row="3" form_item_col="2" col_size="10"/>
+                <!-- Basic multiple subscription -->
+                <data string_ref="f_email"                 form_item_ref="email_basic"             form_type="plan-subscription" form_type_id="2" wrapper_id="1" form_item_row="1" form_item_col="1" col_size="6" />
+                <data string_ref="f_email_r"               form_item_ref="email_basic"             form_type="plan-subscription" form_type_id="2" wrapper_id="1" form_item_row="1" form_item_col="2" col_size="6" />
+                <data string_ref="f_password"              form_item_ref="password_basic"          form_type="plan-subscription" form_type_id="2" wrapper_id="1" form_item_row="2" form_item_col="1" col_size="6" />
+                <data string_ref="f_password_r"            form_item_ref="password_basic"          form_type="plan-subscription" form_type_id="2" wrapper_id="1" form_item_row="2" form_item_col="2" col_size="6" />
+                <data string_ref="f_last_name"             form_item_ref="text_name_required"      form_type="plan-subscription" form_type_id="2" wrapper_id="1" form_item_row="3" form_item_col="1" col_size="8" />
+                <data string_ref="f_first_name"            form_item_ref="text_name_required"      form_type="plan-subscription" form_type_id="2" wrapper_id="1" form_item_row="3" form_item_col="2" col_size="4" />
+                <data string_ref="f_phone_label"           form_item_ref="label_basic"             form_type="plan-subscription" form_type_id="2" wrapper_id="1" form_item_row="4" form_item_col="1" col_size="4" />
+                <data string_ref="f_phone_code_select"     form_item_ref="select_country"          form_type="plan-subscription" form_type_id="2" wrapper_id="1" form_item_row="4" form_item_col="2" col_size="8" />
+                <data string_ref="f_phone_code_input"      form_item_ref="text_readonly"           form_type="plan-subscription" form_type_id="2" wrapper_id="1" form_item_row="5" form_item_col="1" col_size="3" />
+                <data string_ref="f_phone_number"          form_item_ref="number_basic"            form_type="plan-subscription" form_type_id="2" wrapper_id="1" form_item_row="5" form_item_col="2" col_size="9" />
+                <data string_ref="f_group_name"            form_item_ref="text_required"           form_type="plan-subscription" form_type_id="2" wrapper_id="2" form_item_row="1" form_item_col="1" col_size="8" />
+                <data string_ref="f_address_number"        form_item_ref="text_basic"              form_type="plan-subscription" form_type_id="2" wrapper_id="2" form_item_row="2" form_item_col="1" col_size="2" />
+                <data string_ref="f_address_street"        form_item_ref="text_required"           form_type="plan-subscription" form_type_id="2" wrapper_id="2" form_item_row="2" form_item_col="2" col_size="10"/>
+                <data string_ref="f_address_zip"           form_item_ref="text_required"           form_type="plan-subscription" form_type_id="2" wrapper_id="2" form_item_row="3" form_item_col="1" col_size="4" />
+                <data string_ref="f_address_city"          form_item_ref="text_required"           form_type="plan-subscription" form_type_id="2" wrapper_id="2" form_item_row="3" form_item_col="2" col_size="8" />
+                <data string_ref="f_address_country_label" form_item_ref="label_required"          form_type="plan-subscription" form_type_id="2" wrapper_id="2" form_item_row="4" form_item_col="1" col_size="2" />
+                <data string_ref="f_address_country_input" form_item_ref="select_country_required" form_type="plan-subscription" form_type_id="2" wrapper_id="2" form_item_row="4" form_item_col="2" col_size="10"/>
+                <!-- Activation account -->
+                <data string_ref="p_charset"       form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_cmd"           form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_business"      form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_item_name"     form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_amount"        form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_currency_code" form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_first_name"    form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_last_name"     form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_address1"      form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_city"          form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_zip"           form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_country"       form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_cancel"        form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_return"        form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <data string_ref="p_rm"            form_item_ref="hidden_basic" form_type="activation-account" form_type_id="1" wrapper_id="1" />
+                <!-- Sign in -->
+                <data string_ref="f_email"     form_item_ref="email_basic"     form_type="sign-in" form_type_id="1" wrapper_id="1" form_item_row="1" form_item_col="1" col_size="12" />
+                <data string_ref="f_password"  form_item_ref="password_basic"  form_type="sign-in" form_type_id="1" wrapper_id="1" form_item_row="2" form_item_col="1" col_size="12" />
+                <!-- Member account activation -->
+                <data string_ref="f_email"      form_item_ref="email_basic"        form_type="member-activation-account" form_type_id="1" wrapper_id="1" form_item_row="1" form_item_col="1" col_size="12"/>
+                <data string_ref="f_email_r"    form_item_ref="email_basic"        form_type="member-activation-account" form_type_id="1" wrapper_id="1" form_item_row="2" form_item_col="1" col_size="12"/>
+                <data string_ref="f_last_name"  form_item_ref="text_name_required" form_type="member-activation-account" form_type_id="1" wrapper_id="1" form_item_row="3" form_item_col="1" col_size="8" />
+                <data string_ref="f_first_name" form_item_ref="text_name_required" form_type="member-activation-account" form_type_id="1" wrapper_id="1" form_item_row="3" form_item_col="2" col_size="4" />
+                <data string_ref="f_password"   form_item_ref="password_basic"     form_type="member-activation-account" form_type_id="1" wrapper_id="1" form_item_row="4" form_item_col="1" col_size="6" />
+                <data string_ref="f_password_r" form_item_ref="password_basic"     form_type="member-activation-account" form_type_id="1" wrapper_id="1" form_item_row="4" form_item_col="2" col_size="6" />
+                <!-- Plan edition -->
+                <data string_ref="f_post_id"                 form_item_ref="hidden_basic"         form_type="plan-edition" form_type_id="1" wrapper_id="1" form_item_row="1"                                />
+                <data string_ref="f_price_label"             form_item_ref="label_title"          form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="1" form_item_col="1"              />
+                <data string_ref="f_price_symbol"            form_item_ref="label_basic"          form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="1" form_item_col="2"              />
+                <data string_ref="f_price_input"             form_item_ref="number_required"      form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="1" form_item_col="2" col_size="2" />
+                <data string_ref="f_change_device_link"      form_item_ref="link_blank"           form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="1" form_item_col="2"              />
+                <data string_ref="f_free"                    form_item_ref="checkbox_basic"       form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="1" form_item_col="3"              />
+                <data string_ref="f_plan_duration_label"     form_item_ref="label_title_required" form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="2" form_item_col="1"              />
+                <data string_ref="f_plan_duration_radio_1"   form_item_ref="radio_required"       form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="2" form_item_col="2"              />
+                <data string_ref="f_plan_duration_number"    form_item_ref="number_basic"         form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="2" form_item_col="2" col_size="2" />
+                <data string_ref="f_plan_duration_time_type" form_item_ref="select_time_type"     form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="2" form_item_col="2"              />
+                <data string_ref="f_plan_duration_radio_2"   form_item_ref="radio_required"       form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="2" form_item_col="3"              />
+                <data string_ref="f_plan_duration_date"      form_item_ref="date_basic"           form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="2" form_item_col="3"              />
+                <data string_ref="f_plan_duration_radio_3"   form_item_ref="radio_required"       form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="2" form_item_col="4"              />
+                <data string_ref="f_plan_type"               form_item_ref="label_title"          form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="3" form_item_col="1"              />
+                <data string_ref="f_plan_single_radio"       form_item_ref="radio_required"       form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="3" form_item_col="2"              />
+                <data string_ref="f_plan_multiple_radio"     form_item_ref="radio_required"       form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="3" form_item_col="3"              />
+                <data string_ref="f_plan_multiple_min"       form_item_ref="select_min_members"   form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="3" form_item_col="4" col_size="2" />
+                <data string_ref="f_plan_multiple_max"       form_item_ref="select_max_members"   form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="3" form_item_col="4" col_size="2" />
+                <data string_ref="f_change_ceiling"          form_item_ref="link_blank"           form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="3" form_item_col="4"              />
+                <data string_ref="f_form_plan_label"         form_item_ref="label_title_required" form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="4" form_item_col="1"              />
+                <data string_ref="f_form_plan"               form_item_ref="select_plan_forms"    form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="4" form_item_col="2" col_size="6" />
+                <data string_ref="f_new_form_plan_link"      form_item_ref="link_blank"           form_type="plan-edition" form_type_id="1" wrapper_id="2" form_item_row="4" form_item_col="2"              />
+            </insert>
+        </inserts>
+        <posts>
+            <post type="wgs-return" status="publish" comment_status="closed" ping_status="closed">
+                <author auto="true"/>
+                <title>Payment return</title>
+                <content>[wgs-return][/wgs-return]</content>
+                <guid>null</guid>
+            </post>
+            <post type="wgs-activation" status="publish" comment_status="closed" ping_status="closed">
+                <author auto="true"/>
+                <title>Member account activation</title>
+                <content>[wgs-activation][/wgs-activation]</content>
+                <guid>null</guid>
+            </post>
+            <post type="wgs-login" status="publish" comment_status="closed" ping_status="closed">
+                <author auto="true"/>
+                <title>Sign in</title>
+                <content>[wgs-login][/wgs-login]</content>
+                <guid>null</guid>
+            </post>
+            <post type="wgs-profile" status="publish" comment_status="closed" ping_status="closed">
+                <author auto="true"/>
+                <title>My Profile</title>
+                <content>[wgs-profile][/wgs-profile]</content>
+                <guid>null</guid>
+            </post>
+        </posts>
+    </database>
+</install>

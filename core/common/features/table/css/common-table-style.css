@@ -1,0 +1,51 @@
+table.table-flex{
+    display: flex;
+    flex: 1;
+}
+
+table.table-flex tbody{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+table.table-flex tr{
+    display: flex;
+    flex-direction: row;
+}
+
+table.table-flex th{
+    display: inline-flex; 
+}
+
+table.table-flex th[colspan='2']{
+    flex: 1;
+    justify-content: center; 
+}
+
+table.table-flex td{
+    display: inline-flex;
+    flex: 2;
+    align-items: center;
+}
+
+table.table-flex td > select,
+table.table-flex td > input[type='text'],
+table.table-flex td > input[type='number'],
+table.table-flex td > input[type='email'],
+table.table-flex td > input[type='url']{
+    flex: 1;
+}
+
+table.table-flex td.h4a-td-label{
+    flex-direction: row-reverse;
+    flex: 1;
+    font-weight: 700;
+}
+
+table.table-flex td.h4a-td-label > label::after{
+    content : ' :';
+}
+
+table.table-flex td .h4a-item-flex{
+    display: inline-flex;
+}

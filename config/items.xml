@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items xmlns="h4a:items" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/items.xsd">
+    <item ref="plan" name="plan"    class="H4APlugin\WPGroupSubs\Common\Plan"   dbtable="plans"   getter="plan_id" editable="true" slug="pl"/>
+    <item ref="member" name="member"  class="H4APlugin\WPGroupSubs\Common\Member" dbtable="members" getter="email" editable="true" slug="mbr"/>
+    <item ref="subscriber" name="subscriber" class="H4APlugin\WPGroupSubs\Common\Subscriber" dbtable="subscribers" getter="subscriber_id" editable="true" slug="subs"/>
+    <item ref="payment" name="payment" class="H4APlugin\WPGroupSubs\Common\Payment" dbtable="payments" getter="payment_id"/>
+</items>

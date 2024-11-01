@@ -1,0 +1,160 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Form base
+ * 2.0 - Row wrappers
+ * 3.0 - Form labels
+ * 4.0 - Columns
+ * 5.0 - Postboxes
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Form base
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-fieldset{
+    background: #fff;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    font-size: 14px;
+}
+
+.h4a-fieldset:first-child{
+    border-top: 1px solid #e5e5e5;
+}
+
+.h4a-fieldset:last-child{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.h4a-section-wrappers .h4a-fieldset legend{
+    position: absolute;
+    font-weight: 600;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.h4a-section-wrappers .h4a-fieldset legend + .h4a-form-group{
+    margin-top: 50px;
+}
+
+/**
+ * 2.0 - Row wrappers
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-section-wrappers .h4a-form-inline{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.h4a-section-wrappers .h4a-form-inline .h4a-form-group,
+.h4a-section-wrappers .h4a-form-inline > label,
+.h4a-section-wrappers .h4a-form-inline .h4a-form-check-inline > label{
+    padding: 15px 10px;
+}
+
+.h4a-section-wrappers .h4a-form-inline .h4a-form-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+/**
+ * 3.0 - Form labels
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-section-wrappers .h4a-form-inline label{
+    font-weight: 600;
+}
+
+.h4a-section-wrappers .h4a-form-inline .h4a-form-group label{
+    margin-right: 5px;
+}
+
+/**
+ * 4.0 - Columns
+ * -----------------------------------------------------------------------------
+ */
+
+[class^='h4a-col'], [class*='h4a-col'] > *,
+[class^='h4a-col'], [class*='h4a-col'] > span > *{
+    width: 100%;
+}
+
+.h4a-col-12,
+.h4a-col-10,
+.h4a-col-8,
+.h4a-col-6,
+.h4a-col-4,
+.h4a-col-2,
+.h4a-col-1{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    display: flex;
+}
+
+.h4a-col-1{
+    width: 6.33%;
+}
+
+.h4a-col-2{
+    width: 14.66%;
+}
+
+.h4a-col-3{
+    width: 23%;
+}
+
+.h4a-col-4{
+    width: 31.33%;
+}
+
+.h4a-col-5{
+    width: 39.66%;
+}
+
+.h4a-col-6{
+    width: 48%;
+}
+
+.h4a-col-7{
+    width: 56.33%;
+}
+
+.h4a-col-8{
+    width: 64.66%;
+}
+
+.h4a-col-9{
+    width: 73%;
+}
+
+.h4a-col-10{
+    width: 81.33%;
+}
+
+.h4a-col-11{
+    width: 89.66%;
+}
+
+.h4a-col-12{
+    width: 98%;
+}
+
+/**
+ * 5.0 - Postboxes
+ * -----------------------------------------------------------------------------
+ */
+
+.postbox-with-major-actions .inside {
+    margin: 0;
+    padding: 0;
+}

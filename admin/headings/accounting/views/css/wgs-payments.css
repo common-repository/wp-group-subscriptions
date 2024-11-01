@@ -1,0 +1,81 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Advanced Options
+ * 2.0 - List table
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Advanced Options
+ * -----------------------------------------------------------------------------
+ */
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+a.wgs-options-advanced-link{
+    align-self: flex-end;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+a.wgs-options-advanced-link:focus{
+   box-shadow : none;
+}
+
+a.wgs-options-advanced-link.closed + section.wgs-options-advanced-section{
+    height: 0;
+}
+
+section.wgs-options-advanced-section{
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    height: 50px;
+    margin-top: -3px;
+    overflow: hidden;
+    transition: height 1s;
+}
+section.wgs-options-advanced-section form{
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+section.wgs-options-advanced-section form button.h4a-button{
+    top: 0;
+    overflow: hidden;
+}
+
+/**
+ * 2.0 - List table
+ * -----------------------------------------------------------------------------
+ */
+
+table.wp-list-table tbody td.column-payment_id{
+    padding: 0;
+    vertical-align: middle;
+    position:relative;
+}
+
+table.wp-list-table tbody td span.row-status{  
+    border-left: 4px solid #fff;
+    padding: 8px 10px;
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+table.wp-list-table tbody td span.row-status-completed{ 
+    border-left-color: #46b450;
+}
+
+form#wgs-form-refresh-payments{ 
+    display: inline-block;
+}

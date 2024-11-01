@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <addon dir="wgs-recaptcha-addon" main="WGSRecaptchaAddon.php" namespace="WGSRecaptchaAddon"/>
+    <addon dir="wgs-custom-forms-addon" main="WGSCustomFormsAddon.php" namespace="WGSCustomFormsAddon"/>
+    <addon dir="wgs-plan-edition-plus-addon" main="WGSPlanEditionPlusAddon.php" namespace="WGSPlanEditionPlusAddon"/>
+</addons>

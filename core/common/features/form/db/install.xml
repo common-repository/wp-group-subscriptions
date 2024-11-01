@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install xmlns="h4a:install" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/install.xsd" >
+    <database>
+        <tables>
+            <table name="forms">
+                <column name="form_id"       type="int(40)"                           not_null="true" key="primary" a_i="true" />
+                <column name="form_type"     type="varchar(40)"                       not_null="true" />
+                <column name="form_type_id"  type="int(40)"                           not_null="true" />
+                <column name="office"        type="enum( 'front', 'back', 'both' )"   not_null="true" />
+                <column name="user_id"       type="bigint(20)"                        not_null="true" />
+                <column name="name"          type="varchar(255)"                      not_null="true" />
+                <column name="text"          type="text" />
+                <column name="title_display" type="varchar(255)" />
+                <column name="html_id"       type="varchar(255)"                      not_null="true" />
+                <column name="start_date"    type="datetime"                          not_null="true" />
+                <keys>
+                    <unique name="form_ref">
+                        <column ref="form_type"/>
+                        <column ref="form_type_id"/>
+                    </unique>  
+                </keys>
+            </table>
+            <table name="form_wrappers">
+                <column name="wrapper_id"    type="bigint(20)"                                   not_null="true" key="primary" a_i="true" />
+                <column name="wrapper_type"  type="enum( 'fieldset', 'div', 'table', 'hidden' )" not_null="true" />
+                <column name="legend"        type="varchar(30)" />
+                <column name="form_order"    type="tinyint"                                      not_null="true" />
+                <column name="form_type"     type="varchar(40)"                                  not_null="true" />
+                <column name="form_type_id"  type="int(40)" />
+                <column name="html_id"       type="varchar(255)" />
+                <keys>
+                    <index name="form_type_id" col_name="form_type_id" />
+                    <unique name="wrapper_form_ref">
+                        <column ref="form_type"/>
+                        <column ref="form_type_id"/>
+                        <column ref="form_order"/>
+                    </unique>
+                </keys>
+            </table>
+            <table name="form_items">
+                <column name="form_item_id"     type="bigint(40)"                           not_null="true" key="primary" a_i="true" />
+                <column name="form_item_ref"    type="varchar(40)"                          not_null="true" key="unique" />
+                <column name="form_item_type"                                               not_null="true" default="text"
+                        type="enum( 'hidden', 'text', 'link', 'number', 'select', 'radio', 'checkbox', 'label', 'title', 'email', 'password', 'date', 'textarea', 'file_upload' )" />
+                <column name="pattern"          type="varchar(255)" />
+                <column name="href"             type="text" />
+                <column name="required"         type="tinyint(1)"                           not_null="true"  default="0" />
+                <column name="readonly"         type="tinyint(1)"                           not_null="true"  default="0" />
+                <column name="function_options" type="varchar(255)" />
+            </table>
+            <table name="form_strings">
+                <column name="string_id"        type="bigint"                               not_null="true" key="primary" a_i="true" />
+                <column name="string_ref"       type="varchar(25)"                          not_null="true" key="unique"/>
+                <column name="html_label"       type="varchar(50)" />
+                <column name="html_id"          type="varchar(40)" />
+                <column name="html_name"        type="varchar(40)" />
+                <column name="html_value"       type="text" />
+                <column name="html_placeholder" type="varchar(255)" />
+            </table>
+            <table name="form_item_links">
+                <column name="form_item_link_id" type="bigint"                               not_null="true" key="primary" a_i="true" />
+                <column name="string_ref"        type="varchar(25)"                          not_null="true" />
+                <column name="form_item_ref"     type="varchar(40)"                          not_null="true" />
+                <column name="form_type"         type="varchar(40)"                          not_null="true" />
+                <column name="form_type_id"      type="int(40)" />
+                <column name="wrapper_id"        type="bigint(20)" />
+                <column name="form_item_row"     type="tinyint" />
+                <column name="form_item_col"     type="tinyint" />
+                <column name="col_size"          type="enum( '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12' )" />
+                <keys>
+                    <unique name="form_item_links_ref">
+                        <column ref="string_ref"/>
+                        <column ref="form_item_ref"/>
+                        <column ref="form_type"/>
+                        <column ref="form_type_id"/>
+                    </unique>
+                </keys>
+            </table>
+        </tables>
+    </database>
+</install>

@@ -1,0 +1,36 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - List menu
+ *
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - List menu
+ * -----------------------------------------------------------------------------
+ */
+
+ul.h4a-admin-page-menu-list > li > span.dashicons {
+    margin-right: 5px;
+}
+ul.h4a-admin-page-menu-list > li {
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    padding: 5px;
+    background: #fff;
+}
+
+ul.h4a-admin-page-menu-list li > a:hover{
+    color: #0073AA; 
+}
+
+ul.h4a-admin-page-menu-list a{
+    color: #444;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+ul.h4a-admin-page-menu-list > li > ul {
+    padding-left: 20px;
+}

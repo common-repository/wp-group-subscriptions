@@ -1,0 +1,3328 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: My Plugin\n"
+"POT-Creation-Date: 2018-12-26 23:04-0200\n"
+"PO-Revision-Date: 2018-12-26 23:04-0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: WPGroupSubs.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/Admin.php:48
+msgid "Administrators"
+msgstr "Administrateurs"
+
+#: admin/Admin.php:50
+msgid "All administrators"
+msgstr "Tous les administrateurs"
+
+#: admin/Admin.php:80
+#, php-format
+msgid ""
+"Enabling the HTTPS protocol for the page : « %s » is not mandatory but "
+"strongly advised for security issues for your users!"
+msgstr ""
+"L'activation du protocole HTTPS pour la page : « %s » n’est pas obligatoire "
+"mais fortement conseillé pour les problèmes de sécurité pour vos "
+"utilisateurs !"
+
+#: admin/Admin.php:104
+#, php-format
+msgid ""
+"Please enter %s in <a id=\"go-to-paypal-email-address-settings\" href=\"%s"
+"\">Settings >%s</a>"
+msgstr ""
+"Veuillez insérer %s dans <a id=\"go-to-paypal-email-address-settings\" href="
+"\"%s\">Réglages >%s</a>"
+
+#: admin/Admin.php:105
+msgid "your paypal address email"
+msgstr "votre adresse email paypal"
+
+#: admin/Admin.php:127
+#, php-format
+msgid ""
+"Please enter %s in <a id=\"go-to-paypal-identity-token-settings\" href=\"%s"
+"\">Settings >%s</a>"
+msgstr ""
+"Veuillez insérer %s dans <a id=\"go-to-paypal-identity-token-settings\" href="
+"\"%s\">Réglages >%s</a>"
+
+#: admin/Admin.php:128
+msgid "the paypal identity token"
+msgstr "le jeton d'identité paypal"
+
+#: admin/Admin.php:150
+#, php-format
+msgid ""
+"Paypal environment : %s (sandbox) - To activate real financial "
+"transactions : <a id=\"go-to-paypal-environment\" href=\"%s\">Settings >%s</"
+"a>"
+msgstr ""
+"Environnement Paypal:  %s (sandbox) - Pour activer les transactions "
+"financières réelles: <a id=\"go-to-paypal-environment\" href=\"%s\">Réglages "
+">%s</a>"
+
+#: admin/Admin.php:172
+#, php-format
+msgid ""
+"Please choose a currency in <a id=\"go-to-currency-settings\" href=\"%s"
+"\">Settings >%s</a>"
+msgstr ""
+"Veuillez choisir une devise dans <a id=\"go-to-currency-settings\" href=\"%s"
+"\">Réglages >%s</a>"
+
+#: admin/Admin.php:188
+#, php-format
+msgid ""
+"For the security of your users, you should use recaptcha thanks the addon « "
+"<a href=\"%s\">%s</a> »"
+msgstr ""
+"Pour la sécurité de vos utilisateurs, il serait préférable d'utiliser "
+"recaptcha grâce à l'extension « <a href=\"%s\">%s</a> »"
+
+#: admin/headings/accounting/Edit_Subscriber.php:79
+#: config/labels/back-end/labels.php:154
+msgctxt "edition"
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: admin/headings/accounting/Edit_Subscriber.php:80
+#: config/labels/back-end/labels.php:155
+msgctxt "edition"
+msgid "Active"
+msgstr "Activé"
+
+#: admin/headings/accounting/Edit_Subscriber.php:119
+#: admin/headings/accounting/Edit_Subscriber.php:285
+#: admin/headings/members/Edit_Member.php:60
+#: admin/headings/members/Edit_Member.php:271
+#: admin/headings/plans/Edit_Plan.php:84
+#, php-format
+msgid "%s '%s' has been trashed."
+msgstr "%s '%s' a été jeté dans la corbeille."
+
+#: admin/headings/accounting/Edit_Subscriber.php:120
+#: admin/headings/accounting/Edit_Subscriber.php:286
+#: admin/headings/members/Edit_Member.php:61
+#: admin/headings/members/Edit_Member.php:272
+#: admin/headings/plans/Edit_Plan.php:85
+msgctxt "message_item_name"
+msgid "The "
+msgstr "Le "
+
+#: admin/headings/accounting/Edit_Subscriber.php:185
+#: admin/headings/accounting/Edit_Subscriber.php:273
+#: admin/headings/members/Edit_Member.php:125
+#: admin/headings/members/Edit_Member.php:256
+#: admin/headings/plans/Edit_Plan.php:32 admin/headings/plans/Edit_Plan.php:73
+#: core/admin/features/page/template/EditableListTableFromDBTemplate.php:116
+#: core/admin/features/page/template/EditableListTableFromDBTemplate.php:166
+msgid "Sorry, your nonce did not verify."
+msgstr "Désolé, votre nonce n'a pas pu être vérifié."
+
+#: admin/headings/accounting/Edit_Subscriber.php:234
+#: admin/headings/members/Edit_Member.php:151
+#: front-end/shortcodes/my-profile/MyProfileShortcode.php:129
+msgid "Updating failed!"
+msgstr "La mise à jour a échoué !"
+
+#: admin/headings/accounting/Edit_Subscriber.php:234
+#: admin/headings/members/Edit_Member.php:151
+#: front-end/shortcodes/my-profile/MyProfileShortcode.php:129
+msgid "Saving failed!"
+msgstr "L'enregistrement a échoué !"
+
+#: admin/headings/accounting/Edit_Subscriber.php:241
+#: admin/headings/members/Edit_Member.php:160
+#: admin/headings/plans/Edit_Plan.php:58
+msgid "Successfully saved!"
+msgstr "Enregistré avec succès !"
+
+#: admin/headings/accounting/Edit_Subscriber.php:244
+#: admin/headings/members/Edit_Member.php:163
+#: admin/headings/plans/Edit_Plan.php:56
+msgid "Successfully updated!"
+msgstr "Mis à jour avec succès !"
+
+#: admin/headings/accounting/Edit_Subscriber.php:249
+msgid "A member with the same name was automatically saved!"
+msgstr "Un membre avec le même nom a été automatiquement enregistré !"
+
+#: admin/headings/accounting/Edit_Subscriber.php:252
+msgid "The member was updated as well!"
+msgstr "Le membre a été aussi mis à jour !"
+
+#: admin/headings/accounting/Edit_Subscriber.php:328
+#: admin/headings/members/Edit_Member.php:454
+#: config/labels/back-end/labels.php:24
+#: core/admin/features/form/AdminForm.php:479
+msgid "Move to Trash"
+msgstr "Déplacer dans la corbeille"
+
+#: admin/headings/accounting/Edit_Subscriber.php:332
+#: admin/headings/members/Edit_Member.php:460
+#, php-format
+msgid "Update %s"
+msgstr "Mettre à jour %s"
+
+#: admin/headings/accounting/Edit_Subscriber.php:332
+#: admin/headings/accounting/Edit_Subscriber.php:339
+msgctxt "save-subscriber-edition"
+msgid "subscriber"
+msgstr "l'adhérent"
+
+#: admin/headings/accounting/Edit_Subscriber.php:339
+#: admin/headings/members/Edit_Member.php:467 common/classes/units/Plan.php:81
+#, php-format
+msgid "Save %s"
+msgstr "Enregistrer %s"
+
+#: admin/headings/accounting/Edit_Subscriber.php:353
+#: admin/headings/members/Edit_Member.php:400
+msgctxt "misc_postbox_label"
+msgid "Last Subscription"
+msgstr "Dernière inscription"
+
+#: admin/headings/accounting/Edit_Subscriber.php:354
+#: admin/headings/members/Edit_Member.php:418
+msgid "Never activated"
+msgstr "Pas encore activé"
+
+#: admin/headings/accounting/Edit_Subscriber.php:358
+#: admin/headings/members/Edit_Member.php:422
+msgctxt "misc_postbox_label"
+msgid "Creation date"
+msgstr "Date d'ajout"
+
+#: admin/headings/accounting/Edit_Subscriber.php:372
+msgid "Last payment"
+msgstr "Dernier paiement"
+
+#: admin/headings/accounting/Edit_Subscriber.php:378
+msgid "Please, save the subscriber before to assign payments"
+msgstr "Veuillez contacter l'adhérent pour procéder au paiement"
+
+#: admin/headings/accounting/Edit_Subscriber.php:388
+msgid "Assign / Unassign"
+msgstr "Attribué / Non attribué"
+
+#: admin/headings/accounting/Edit_Subscriber.php:403
+#: config/labels/back-end/labels.php:68
+msgid "Single"
+msgstr "Individuel"
+
+#: admin/headings/accounting/Edit_Subscriber.php:404
+msgid "Multiple"
+msgstr "Groupe"
+
+#: admin/headings/accounting/Edit_Subscriber.php:405
+msgid "Payments assignment"
+msgstr "Attribution des paiements"
+
+#: admin/headings/accounting/Edit_Subscriber.php:406
+#: admin/headings/accounting/Payments_List_Table.php:12
+msgid "Unassigned"
+msgstr "Non attribués"
+
+#: admin/headings/accounting/Edit_Subscriber.php:407
+msgid "Assigned to this subscriber"
+msgstr "Attribués à cet adhérent"
+
+#: admin/headings/accounting/Edit_Subscriber.php:408
+msgid "Save Changes"
+msgstr "Enregistrer les changements"
+
+#: admin/headings/accounting/Edit_Subscriber.php:409
+#: config/labels/front-end/labels.php:35
+#: front-end/shortcodes/my-profile/profile-account/ProfileAccountShortcode.php:66
+msgid "Please insert your password"
+msgstr "Veuillez insérer votre mot de passe"
+
+#: admin/headings/accounting/Edit_Subscriber.php:410
+#: config/labels/front-end/labels.php:36
+#: front-end/shortcodes/my-profile/profile-account/ProfileAccountShortcode.php:67
+msgid "Please confirm your password"
+msgstr "Confirmez votre mot de passe"
+
+#: admin/headings/accounting/Edit_Subscriber.php:411
+#: common/classes/traits/SubscriberEditionTrait.php:111
+#: common/classes/units/Member.php:198
+#: front-end/shortcodes/my-profile/profile-account/ProfileAccountShortcode.php:68
+msgid "Change Password"
+msgstr "Modifier le mot de passe"
+
+#: admin/headings/accounting/Edit_Subscriber.php:412
+#: admin/headings/members/Edit_Member.php:355
+#: admin/headings/members/Edit_Member.php:360
+#: core/admin/features/form/AdminForm.php:395
+#: front-end/shortcodes/my-profile/profile-account/ProfileAccountShortcode.php:69
+msgid "Cancel"
+msgstr "Annuler"
+
+#: admin/headings/accounting/Edit_Subscriber.php:413
+#: admin/headings/accounting/Edit_Subscriber.php:630
+msgid "Include as member"
+msgstr "Inclure en tant que membre"
+
+#: admin/headings/accounting/Edit_Subscriber.php:468
+msgid "Error during the payments assignment"
+msgstr "Erreur durant l´attribution des paiements"
+
+#: admin/headings/accounting/Edit_Subscriber.php:476
+msgid "Payment(s) (un)assigned succesfully!"
+msgstr "Paiement(s) attribué(s)/non attribué(s) avec succès!"
+
+#: admin/headings/accounting/Edit_Subscriber.php:482
+#: admin/headings/members/Edit_Member.php:401
+#: front-end/shortcodes/my-profile/profile-subscription/views/view-profile-subscription.php:77
+msgid "None"
+msgstr "Aucun"
+
+#: admin/headings/accounting/Edit_Subscriber.php:490
+msgid "The subscriber has beed disabled because there is no payment assigned."
+msgstr "L'abonné a été désactivé car aucun paiement n'a été attribué."
+
+#: admin/headings/accounting/Edit_Subscriber.php:497
+msgid "Payment(s) unassigned succesfully!"
+msgstr "Paiement(s) désattribué(s) avec succès!"
+
+#: admin/headings/accounting/Edit_Subscriber.php:531
+#: admin/headings/accounting/Edit_Subscriber.php:542
+msgid "nbr"
+msgstr "n°"
+
+#: admin/headings/accounting/Edit_Subscriber.php:600
+msgid "Plan"
+msgstr "Abonnement"
+
+#: admin/headings/accounting/Edit_Subscriber.php:611
+msgid "Type"
+msgstr "Type"
+
+#: admin/headings/accounting/Payments.php:43
+msgid "Advanced Options"
+msgstr "Options avancées"
+
+#: admin/headings/accounting/Payments.php:55
+#, php-format
+msgid ""
+"To import Paypal payments, please fill in Paypal API settings : <a id=\"go-"
+"to-paypal-api-username\" href=\"%s\">Settings &gt; %s</a>"
+msgstr ""
+"Pour importer les Paiements Paypal, veuillez remplir les paramètres de l´API "
+"Paypal : <a id=\"go-to-paypal-api-username\" href=\"%s\">Réglages &gt; %s</a>"
+
+#: admin/headings/accounting/Payments.php:75
+msgid "Download Paypal Payments"
+msgstr "Importer les Paiements Paypal"
+
+#: admin/headings/accounting/Payments_List_Table.php:12
+msgid "Assigned"
+msgstr "Attribués"
+
+#: admin/headings/accounting/Subscribers_List_Table.php:24
+#: admin/headings/members/Members_List_Table.php:96
+#: core/admin/features/page/template/list-table/H4A_List_Table.php:491
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Modifier &#8220;%s&#8221;"
+
+#: admin/headings/accounting/views/view-subscriber-step-1.php:27
+msgid ""
+"No published plan found, please publish a plan before adding new subscriber."
+msgstr ""
+"Aucun abonnement publié trouvé, veuillez publier un abonnement avant l'ajout "
+"de nouvel adhérent."
+
+#: admin/headings/accounting/views/view-subscriber-step-1.php:37
+#: admin/headings/accounting/views/view-subscriber-step-1.php:78
+#: admin/headings/members/views/view-member-step-1.php:36
+#: admin/headings/members/views/view-member-step-1.php:88
+#: core/front-end/features/form/FrontEndForm.php:47
+#, php-format
+msgid "Step %d"
+msgstr "Etape %d"
+
+#: admin/headings/accounting/views/view-subscriber-step-1.php:38
+msgid "Which plan ?"
+msgstr "Quel abonnement ?"
+
+#: admin/headings/accounting/views/view-subscriber-step-1.php:66
+msgid "Please select a plan"
+msgstr "Choississez un abonnement"
+
+#: admin/headings/accounting/views/view-subscriber-step-1.php:78
+#: admin/headings/members/views/view-member-step-1.php:88
+msgid "Form"
+msgstr "Formulaire"
+
+#: admin/headings/members/Edit_Member.php:189
+#: common/classes/units/PlanForms.php:83
+#: core/front-end/features/form/FrontEndForm.php:144
+msgid "first name"
+msgstr "prénom"
+
+#: admin/headings/members/Edit_Member.php:196
+#: common/classes/units/PlanForms.php:90
+#: core/front-end/features/form/FrontEndForm.php:151
+msgid "last name"
+msgstr "nom"
+
+#: admin/headings/members/Edit_Member.php:307
+msgid "New Password"
+msgstr "Nouveau mot de passe"
+
+#: admin/headings/members/Edit_Member.php:320
+msgid "Generate Password"
+msgstr "Générer mot de passe"
+
+#: admin/headings/members/Edit_Member.php:341
+msgctxt "password strength"
+msgid "Password strength unknown"
+msgstr "Sécurité du mot de passe inconnu"
+
+#: admin/headings/members/Edit_Member.php:342
+msgctxt "password strength"
+msgid "Very weak"
+msgstr "Très faible"
+
+#: admin/headings/members/Edit_Member.php:343
+msgctxt "password strength"
+msgid "Weak"
+msgstr "Faible"
+
+#: admin/headings/members/Edit_Member.php:344
+msgctxt "password strength"
+msgid "Medium"
+msgstr "Moyen"
+
+#: admin/headings/members/Edit_Member.php:345
+msgctxt "password strength"
+msgid "Strong"
+msgstr "Fort"
+
+#: admin/headings/members/Edit_Member.php:346
+msgctxt "password mismatch"
+msgid "Mismatch"
+msgstr "Ne correspond pas"
+
+#: admin/headings/members/Edit_Member.php:352
+#: admin/headings/members/Edit_Member.php:362
+msgid "Hide password"
+msgstr "Cacher le mot de passe"
+
+#: admin/headings/members/Edit_Member.php:353
+#: admin/headings/members/Edit_Member.php:359
+msgid "Hide"
+msgstr "Cacher"
+
+#: admin/headings/members/Edit_Member.php:354
+msgid "Cancel password change"
+msgstr "Annuler le changement du mot de passe"
+
+#: admin/headings/members/Edit_Member.php:356
+msgid "Your new password has not been saved."
+msgstr "Votre nouveau mot de passe a été sauvegardé."
+
+#: admin/headings/members/Edit_Member.php:357
+msgid "Confirm use of weak password"
+msgstr "Confirmez-vous la faiblesse de votre mot de passe"
+
+#: admin/headings/members/Edit_Member.php:358
+msgid "Show"
+msgstr "Voir"
+
+#: admin/headings/members/Edit_Member.php:361
+msgid "Show password"
+msgstr "Voir le mot de passe"
+
+#: admin/headings/members/Edit_Member.php:390
+#: config/labels/back-end/labels.php:56
+msgctxt "misc_postbox_label"
+msgid "Plan"
+msgstr "Abonnement"
+
+#: admin/headings/members/Edit_Member.php:395
+#: config/labels/back-end/labels.php:19
+msgctxt "misc_postbox_label"
+msgid "Status"
+msgstr "Etat"
+
+#: admin/headings/members/Edit_Member.php:412
+msgctxt "misc_postbox_label"
+msgid "Last connection"
+msgstr "Dernière connexion"
+
+#: admin/headings/members/Edit_Member.php:413
+msgid "Never connected"
+msgstr "Jamais connecté"
+
+#: admin/headings/members/Edit_Member.php:417
+msgctxt "misc_postbox_label"
+msgid "Last activation"
+msgstr "Dernière activation"
+
+#: admin/headings/members/Edit_Member.php:430
+msgctxt "misc_postbox_label"
+msgid "Group name"
+msgstr "Nom du groupe"
+
+#: admin/headings/members/Edit_Member.php:460
+#: admin/headings/members/Edit_Member.php:467
+msgctxt "save-member-edition"
+msgid "member"
+msgstr "membre"
+
+#: admin/headings/members/Members_List_Table.php:57
+#: core/admin/features/page/template/list-table/editable/H4A_Editable_List_Table.php:76
+#, php-format
+msgid "%s &#8220;%s&#8221;"
+msgstr "%s &#8220;%s&#8221;"
+
+#: admin/headings/members/Members_List_Table.php:195
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:1040
+msgid "Select All"
+msgstr "Sélectionnez tout"
+
+#: admin/headings/members/views/view-member-step-1.php:26
+msgid ""
+"No multiple plan subscription is found. You need group names before adding "
+"new member."
+msgstr ""
+"Aucune inscription à un abonnement groupe trouvé. Vous avez besoin de noms "
+"de groupe pour ajouter un membre."
+
+#: admin/headings/members/views/view-member-step-1.php:37
+msgid "Which group name ?"
+msgstr "Quel groupe ?"
+
+#: admin/headings/members/views/view-member-step-1.php:51
+msgid "All groups reached the maximum of members."
+msgstr "Tous les groupes ont atteint le maximum de membres."
+
+#: admin/headings/members/views/view-member-step-1.php:76
+msgid "Please select a group"
+msgstr "Choisissez un groupe"
+
+#: admin/headings/plans/Edit_Plan.php:44
+#, php-format
+msgid "A plan with this name '%s' already exits!"
+msgstr "Un abonnement avec ce nom '%s' existe déjà !"
+
+#: admin/headings/plans/Edit_Plan.php:78
+msgid "Trash failed!"
+msgstr "Le déplacement dans la corbeille a échoué !"
+
+#: admin/headings/plans/Edit_Plan.php:113
+msgid "This value must be greater than "
+msgstr "Cette valeur doit être supérieure à "
+
+#: admin/headings/settings/Paypal.php:24
+msgid "Paypal configuration"
+msgstr "Configuration du compte paypal"
+
+#: admin/headings/settings/Paypal.php:25
+msgid ""
+"To make the payment system work correctly with Paypal, please log in your "
+"Paypal account and follow the instructions below."
+msgstr ""
+"Pour faire fonctionner correctement le système de paiement avec Paypal, "
+"veuillez vous connecter à votre compte Paypal et suivre les instructions "
+"suivantes."
+
+#: admin/headings/settings/Paypal.php:26
+msgid "How to enable payments with Paypal ?"
+msgstr "Comment activer les paiements via Paypal ?"
+
+#: admin/headings/settings/Paypal.php:28
+msgid "First of all, check if you Paypal account is ready."
+msgstr ""
+"Tout d'abord, vérifiez que votre compte Paypal est bien opérationnelle."
+
+#: admin/headings/settings/Paypal.php:29
+msgid ""
+"Then, configure the Website Preferences : Profile > Account Seettings > My "
+"selling tools > Website preferences"
+msgstr ""
+"Ensuite, configurez les préférences du site Web: Préférences >Paramètres du "
+"compte > Mes ventes > Préférences de site marchand"
+
+#: admin/headings/settings/Paypal.php:31
+msgid ""
+"Under the Selling Online section, click the Update link in the row for "
+"Website Preferences. The Website Payment Preferences page appears."
+msgstr ""
+"Sous la section Vendre en ligne, cliquez sur le lien Mettre à jour à la "
+"ligne Préférences du site marchand. La page Préférences de réception de "
+"paiements sur le site apparaît."
+
+#: admin/headings/settings/Paypal.php:32
+msgid ""
+"Under Auto Return for Website Payments, click the On radio button to "
+"<strong>enable Auto Return</strong>."
+msgstr ""
+"Sous Renvoi automatique pour les paiements sur site marchand, cliquez sur le "
+"bouton radio Activé pour <strong>activer le retour automatique</strong> ."
+
+#: admin/headings/settings/Paypal.php:33
+#, php-format
+msgid ""
+"In the Return URL field, <strong>please enter the URL : <input type=\"text\" "
+"readonly=\"readonly\" style=\"width: 400px;\" value=\"%s\"/></strong>"
+msgstr ""
+"Dans le champ URL de renvoi, <strong>veuillez entrer l'URL : <input type="
+"\"text\" readonly=\"true\" style=\"width: 400px;\" value=\"%s\"/></strong>"
+
+#: admin/headings/settings/Paypal.php:34
+msgid ""
+"Under Payment Data Transfer (optional), click the On radio button to "
+"<strong>enable Payment Data Transfer</strong>."
+msgstr ""
+"Sous Transfert des données de paiement (facultatif), cliquez sur le bouton "
+"radio Activé pour <strong>activer le transfert de données de paiement</"
+"strong> ."
+
+#: admin/headings/settings/Paypal.php:35
+msgid "Save it!"
+msgstr "Enregistrer l'ensemble !"
+
+#: admin/headings/settings/Paypal.php:36
+#, php-format
+msgid ""
+"Under Payment Data Transfer (optional), <strong>your identity token "
+"appeared, please copy and paste it in %s</strong>."
+msgstr ""
+"Sous Transfert de données de paiement (facultatif), <strong>votre jeton "
+"d'identité est apparu, copiez et collez-le dans %s</strong> ."
+
+#: admin/headings/settings/Paypal.php:36 admin/options/Options.php:96
+msgid "Paypal PDT identity token"
+msgstr "Jeton d'identité Paypal (PDT)"
+
+#: admin/headings/settings/Paypal.php:40
+msgid ""
+"How to configure to get the option to import all payments from your Paypal "
+"account ?"
+msgstr ""
+"Comment configurer pour avoir l´option d´import des paiements de votre "
+"compte Paypal ?"
+
+#: admin/headings/settings/Paypal.php:42
+msgid ""
+"To download all paypal payments, you need to fill these following fields up :"
+msgstr ""
+"Pour télécharger tous les paiements paypal, vous avez besoin de remplir les "
+"champs suivants :"
+
+#: admin/headings/settings/Paypal.php:44 admin/options/Options.php:104
+msgid "Paypal API Username"
+msgstr "Identifiant API Paypal"
+
+#: admin/headings/settings/Paypal.php:45 admin/options/Options.php:112
+msgid "Paypal API Password"
+msgstr "Mot de passe API Paypal"
+
+#: admin/headings/settings/Paypal.php:46 admin/options/Options.php:120
+msgid "Paypal API Signature"
+msgstr "Signature API Paypal"
+
+#: admin/headings/settings/Paypal.php:48
+msgid ""
+"You can find this information in your Paypal account in : Profile > Account "
+"Seettings > My selling tools > API access"
+msgstr ""
+"Vous trouverez ces informations sur votre compte Paypal dans : Préférences > "
+"Paramètres du compte  > Mes ventes > Accès à l'API"
+
+#: admin/headings/settings/Paypal.php:50
+msgid ""
+"Under the Selling Online section, click the Update link in the row for API "
+"access."
+msgstr ""
+"Sous la section Vendre en ligne, cliquez sur le lien Mettre à jour à la "
+"ligne Accès à l'API."
+
+#: admin/headings/settings/Paypal.php:51
+msgid ""
+"Once on the API credentials page, click on the last option for NVP/SOAP API "
+"integration."
+msgstr ""
+"Une fois sur la page Vos identifiants API de paiement, cliquez sur la "
+"dernière option Intégration d'API NVP/SOAP (ancienne version), le lien "
+"\"Gérer les identifiants API\"."
+
+#: admin/headings/settings/Paypal.php:52
+msgid ""
+"Copy and paste in this current page the API username, password and signature."
+msgstr ""
+"Copiez et collez sur cette page l´identifiant, le mot de passe et la "
+"signature pour l´API."
+
+#: admin/options/Options.php:37 admin/options/Options.php:44
+msgid "Currency"
+msgstr "Devise"
+
+#: admin/options/Options.php:52
+msgid "Currency position"
+msgstr "Position de la devise"
+
+#: admin/options/Options.php:65
+msgid "Paypal"
+msgstr "Paypal"
+
+#: admin/options/Options.php:72
+msgid "Renew payment Paypal option"
+msgstr "Renouveler l'option de paiement PayPal"
+
+#: admin/options/Options.php:80
+msgid "Paypal environment"
+msgstr "Environnement Paypal"
+
+#: admin/options/Options.php:88
+msgid "Paypal email address"
+msgstr "Adresse email Paypal"
+
+#: admin/options/Options.php:134
+msgid "Profile Page"
+msgstr "Page Profile"
+
+#: admin/options/Options.php:141
+msgid "Page"
+msgstr "Page"
+
+#: admin/options/Options.php:154
+msgid "Premium"
+msgstr "Premium"
+
+#: admin/options/Options.php:161
+msgid "License key"
+msgstr "Clé d´activation"
+
+#: admin/options/Options.php:237
+msgid "Before the amount"
+msgstr "Avant le montant"
+
+#: admin/options/Options.php:239
+msgid "After the amount"
+msgstr "Après le montant"
+
+#: admin/options/Options.php:246
+msgid "Display in 'My Profile' for subscribers."
+msgstr "Afficher dans 'Mon Profile' pour les adhérents."
+
+#: admin/options/Options.php:253
+msgid "Test (sandbox)"
+msgstr "Test (sandbox)"
+
+#: admin/options/Options.php:255
+msgid "Production mode"
+msgstr "Mode production"
+
+#: admin/options/Options.php:302
+msgid "Default Plugin Page"
+msgstr "Page par défaut"
+
+#: admin/options/Options.php:316
+msgid "Activated"
+msgstr "Activé"
+
+#: admin/options/Options.php:316
+msgid "Deactivated"
+msgstr "Désactivé"
+
+#: admin/options/Options.php:327
+msgid "Deactivate"
+msgstr "Désactiver"
+
+#: admin/options/Options.php:331
+msgid "Activate"
+msgstr "Activer"
+
+#: common/classes/traits/SubscriberEditionTrait.php:105
+#: common/classes/units/Member.php:192 config/labels/front-end/labels.php:21
+msgid "Password"
+msgstr "Mot de passe"
+
+#: common/classes/units/Member.php:61
+msgid "Your subscription has expired!"
+msgstr "Votre abonnement a expiré !"
+
+#: common/classes/units/Member.php:64
+msgid "Error, please refresh this page."
+msgstr "Erreur, veuillez rafraîchir cette page."
+
+#: common/classes/units/Member.php:210
+msgid "Group name"
+msgstr "Nom du groupe"
+
+#: common/classes/units/Member.php:243
+#, php-format
+msgctxt "editable_item"
+msgid "%s '%s' already exists in members!"
+msgstr "%s '%s' existe déjà parmi les membres !"
+
+#: common/classes/units/Member.php:243 common/classes/units/Member.php:289
+#: common/classes/units/Plan.php:339 common/classes/units/Plan.php:404
+#: common/classes/units/Subscriber.php:231
+#: common/classes/units/Subscriber.php:292
+msgid "The "
+msgstr "Le "
+
+#: common/classes/units/Member.php:246
+#, php-format
+msgid "The email '%s' already exists!"
+msgstr "L'email '%s' existe déjà !"
+
+#: common/classes/units/Member.php:268 common/classes/units/Plan.php:381
+#, php-format
+msgctxt "editable_item"
+msgid "%s '%s' could not be saved!"
+msgstr "%s '%s' n'a pas pu être enregistré !"
+
+#: common/classes/units/Member.php:268 common/classes/units/Plan.php:381
+msgctxt "editable_item"
+msgid "The "
+msgstr "Le "
+
+#: common/classes/units/Member.php:289 common/classes/units/Subscriber.php:292
+#, php-format
+msgid "%s ( id : '%s' ) does not already exist to update it!"
+msgstr "%s ( id : '%s' ) n'existe pas et ne peut donc pas être mis à jour !"
+
+#: common/classes/units/Member.php:321 common/classes/units/Subscriber.php:407
+#, php-format
+msgid "Impossible to move the %s '%s' to trash!"
+msgstr "Impossible de mettre %s '%s' à la corbeille !"
+
+#: common/classes/units/Member.php:329 common/classes/units/Subscriber.php:414
+#, php-format
+msgid "Impossible to restore the %s '%s' from the trash!"
+msgstr "Impossible de récupérer %s '%s' de la corbeille !"
+
+#: common/classes/units/Member.php:344
+#, php-format
+msgid "Impossible to delete the member %s %s linked to this account!"
+msgstr "Impossible de supprimer le membre %s %s relié à ce compte !"
+
+#: common/classes/units/Member.php:352 common/classes/units/Plan.php:484
+#: common/classes/units/Subscriber.php:444
+#, php-format
+msgid "%s '%s' has been deleted."
+msgstr "%s '%s' a été supprimé."
+
+#: common/classes/units/Member.php:352 config/labels/back-end/labels.php:82
+msgctxt "message_item_name"
+msgid "The member"
+msgstr "Le membre"
+
+#: common/classes/units/Member.php:466 common/classes/units/Subscriber.php:961
+msgid "Invalid Email or Password!"
+msgstr "Email ou Mot de passe invalide !"
+
+#: common/classes/units/Member.php:503
+msgid "The plan does not exist anymore!"
+msgstr "L'abonnement n'existe plus!"
+
+#: common/classes/units/Member.php:507
+msgid "Member access for this plan is temporarily closed."
+msgstr "L'accès membre pour cet abonnement est temporairement fermé."
+
+#: common/classes/units/Member.php:516
+msgid ""
+"Impossible to use PaypalIPN to check the payment. You should add https on "
+"your site."
+msgstr ""
+"Impossible d'utiliser PaypalIPN pour vérifier le paiement. Vous devriez "
+"ajouter https sur votre site Web."
+
+#: common/classes/units/Member.php:524 common/classes/units/Member.php:550
+#, php-format
+msgid "The account %s is not active yet. No payment found!"
+msgstr "Le compte %s n'est pas encore activé. Pas de paiement trouvé !"
+
+#: common/classes/units/Member.php:552
+msgid "Your account is not active yet."
+msgstr "Votre compte n'est pas encore activé."
+
+#: common/classes/units/Member.php:552
+msgid "Please contact the subscriber to proceed to payment."
+msgstr "Veuillez contacter l'adhérent pour procéder au paiement."
+
+#: common/classes/units/Member.php:620
+msgid "Welcome!"
+msgstr "Bienvenue !"
+
+#: common/classes/units/Member.php:623
+#, php-format
+msgid " signed up for %s"
+msgstr " s'est inscrit sur %s"
+
+#: common/classes/units/Member.php:624
+#, php-format
+msgid ""
+"You are invited to the group : '%s', and a member account at this email "
+"address has assigned to you"
+msgstr ""
+"Vous êtes invité pour le groupe : '%s', et un compte membre à cette adresse "
+"e-mail vous a été attribué"
+
+#: common/classes/units/Member.php:625
+msgid ""
+"To activate your member account, please fill in the latest information of "
+"your profile"
+msgstr ""
+"Pour activer votre compte membre, veuillez remplir les dernières "
+"informations de votre profile"
+
+#: common/classes/units/Member.php:632 common/classes/units/Member.php:636
+msgid "Activate my member account!"
+msgstr "Activer mon compte membre !"
+
+#: common/classes/units/Member.php:639
+msgid "Have a great day,"
+msgstr "Passez une bonne journée,"
+
+#: common/classes/units/Member.php:641
+#, php-format
+msgid "Team %s"
+msgstr "Equipe %s"
+
+#: common/classes/units/Member.php:646 config/labels/front-end/labels.php:66
+#: config/labels/front-end/labels.php:78
+msgid "Member account activation"
+msgstr "Activation du compte membre"
+
+#: common/classes/units/Member.php:678
+#, php-format
+msgid ""
+"Impossible to update the member linked to this subscriber ( id : '%s' )!"
+msgstr ""
+"Impossible de mettre à jour le membre relié à cet adhérent ( id : '%s' ) !"
+
+#: common/classes/units/Member.php:685
+#, php-format
+msgid "Impossible to get the member linked to this subscriber ( id : '%s' )!"
+msgstr "Impossible d'obtenir le membre relié à cet adhérent ( id : '%s' ) !"
+
+#: common/classes/units/Payment.php:232 common/classes/units/Payment.php:236
+#: common/classes/units/Payment.php:240 common/classes/units/Payment.php:248
+#: common/classes/units/Payment.php:252 common/classes/units/Payment.php:256
+#: common/classes/units/Payment.php:260 common/classes/units/Payment.php:265
+msgid "Your account is not active."
+msgstr "Votre compte n'est pas actif."
+
+#: common/classes/units/Payment.php:232
+msgid "Your payment was denied."
+msgstr "Votre paiement a été refusé."
+
+#: common/classes/units/Payment.php:236
+msgid "Your authorization payment has expired and cannot be captured."
+msgstr ""
+"L'autorisation de votre paiement a expiré et ne peut pas être récupérée."
+
+#: common/classes/units/Payment.php:240
+msgid ""
+"The payment has failed. This happens only if the payment was made from your "
+"bank account."
+msgstr ""
+"Le paiement a échoué. Cela se produit uniquement si le paiement a été "
+"effectué à partir du compte bancaire de votre client."
+
+#: common/classes/units/Payment.php:244
+msgid "The payment is pending."
+msgstr "Le paiement est en cours de traitement."
+
+#: common/classes/units/Payment.php:244
+msgid "Your account will be active as soon as the payment is completed."
+msgstr "Votre compte sera actif dès que le paiement sera effectué."
+
+#: common/classes/units/Payment.php:248 common/classes/units/Payment.php:252
+msgid "The payment has been refunded."
+msgstr "Le paiement a été remboursé."
+
+#: common/classes/units/Payment.php:256
+msgid "The payment is processing."
+msgstr "Le paiement est en cours de traitement."
+
+#: common/classes/units/Payment.php:260
+msgid "The payment was canceled."
+msgstr "Le paiement a été annulé."
+
+#: common/classes/units/Payment.php:265
+msgid "Payment error."
+msgstr "Erreur de paiement."
+
+#: common/classes/units/Plan.php:81
+msgctxt "save-plan-edition"
+msgid "Plan"
+msgstr "Abonnement"
+
+#: common/classes/units/Plan.php:339
+#, php-format
+msgid "%s '%s' already exists!"
+msgstr "%s '%s' existe déjà !"
+
+#: common/classes/units/Plan.php:342
+#, php-format
+msgid "The plan '%s' already exists!"
+msgstr "L'abonnement '%s' existe déjà !"
+
+#: common/classes/units/Plan.php:404
+#, php-format
+msgid " %s ( id : '%s' ) does not already exist to update it!"
+msgstr " %s ( id : '%s' ) n'existe pas et ne peut donc pas être mis à jour !"
+
+#: common/classes/units/Plan.php:449
+#, php-format
+msgid "Impossible to trash '%s'!"
+msgstr "Impossible de mettre '%s' à la corbeille !"
+
+#: common/classes/units/Plan.php:456
+#, php-format
+msgid "Impossible to restore '%s' from the trash!"
+msgstr "Impossible de récupérer '%s' de la corbeille !"
+
+#: common/classes/units/Plan.php:470
+#, php-format
+msgid "Impossible to delete %s '%s'!"
+msgstr "Impossible de supprimer %s '%s'!"
+
+#: common/classes/units/Plan.php:470
+msgctxt "message_item_name"
+msgid "the plan"
+msgstr "l'abonnement"
+
+#: common/classes/units/Plan.php:477
+#, php-format
+msgid "Impossible to delete the wgs-form-page post ( id : '%s' )!"
+msgstr "Impossible de supprimer le post wgs-form-page  ( id : '%s' ) !"
+
+#: common/classes/units/Plan.php:484 config/labels/back-end/labels.php:33
+msgctxt "message_item_name"
+msgid "The plan"
+msgstr "L'abonnement"
+
+#: common/classes/units/PlanForms.php:26 common/classes/units/PlanForms.php:46
+msgid "Please select your form"
+msgstr "Veuillez sélectionner votre formulaire"
+
+#: common/classes/units/Subscriber.php:227
+#, php-format
+msgid "The email '%s' already exists in subscribers!"
+msgstr "L'email '%s' existe déjà parmi les adhérents !"
+
+#: common/classes/units/Subscriber.php:231
+#, php-format
+msgctxt "editable_item"
+msgid "%s '%s' already exists!"
+msgstr "%s '%s' existe déjà !"
+
+#: common/classes/units/Subscriber.php:235
+#, php-format
+msgid "A member with this email '%s' already exists!"
+msgstr "Un membre avec l'email '%s' existe déjà !"
+
+#: common/classes/units/Subscriber.php:425
+#, php-format
+msgid "The subscriber with the id '%s' does not exist!"
+msgstr "Un adhérent avec l'id : '%s' n'existe pas !"
+
+#: common/classes/units/Subscriber.php:438
+#, php-format
+msgid "Impossible to delete the subscriber ( id : '%s' )!"
+msgstr "Impossible de supprimer l'adhérent ( id : '%s' ) !"
+
+#: common/classes/units/Subscriber.php:444
+#: config/labels/back-end/labels.php:123
+msgctxt "message_item_name"
+msgid "The subscriber"
+msgstr "L'adhérent"
+
+#: common/classes/units/Subscriber.php:695
+msgid ""
+"Impossible to enable the subscriber because the last subscription date is "
+"too old - plan has expired."
+msgstr ""
+"Impossible d´activer l´adhérent parce que la dernière date d´inscription est "
+"obsolète - l´abonnement a expiré."
+
+#: common/classes/units/Subscriber.php:708
+msgid ""
+"You cannot enable a Subscriber if there is no completed payment for a paid "
+"plan."
+msgstr ""
+"Vous ne pouvez pas activer un adhérent s´il n´y a pas de paiement effectué "
+"pour un abonnement payant."
+
+#: common/classes/units/Subscriber.php:720
+msgid ""
+"Impossible to enable the subscriber because the last payment is too old - "
+"plan has expired."
+msgstr ""
+"Impossible d´activer un adhérent parce que le dernier paiement est trop "
+"ancien - l´abonnement a expiré."
+
+#: common/classes/units/Subscriber.php:743
+msgid "Impossible to add a single member without plan id."
+msgstr ""
+"Impossible d´ajouter un membre individuel sans identifiant d´abonnement."
+
+#: common/classes/units/Subscriber.php:827
+msgid "The members array must contain only one member for a single plan"
+msgstr ""
+"Le tableau des membres devraient contenir seulement un membre pour un "
+"abonnement individuel"
+
+#: common/classes/units/Subscriber.php:831
+msgid "The single member not found!"
+msgstr "Membre individuel non trouvé !"
+
+#: common/classes/units/Subscriber.php:894
+#, php-format
+msgid "Another subscriber got this email '%s'!"
+msgstr "Un autre adhérent possède cet email '%s' !"
+
+#: common/classes/units/Subscriber.php:902
+#, php-format
+msgid "Another member got this email '%s'!"
+msgstr "Un autre membre possède cet email '%s' !"
+
+#: common/classes/widgets/Profile_Widget.php:22
+msgid "To display a login area for WGS users and access to their profile page."
+msgstr ""
+"Pour afficher une zone de connexion pour les utilisateurs de WGS et accéder "
+"à leur page de profile."
+
+#: common/classes/widgets/Profile_Widget.php:138
+msgid "Sign Out"
+msgstr "Se déconnecter"
+
+#: common/classes/widgets/Profile_Widget.php:144
+msgid "Sign In"
+msgstr "Se connecter"
+
+#: common/cron/task-activation.php:32
+msgid "Your plan at "
+msgstr "Votre abonnement chez "
+
+#: common/cron/task-activation.php:34
+msgid "For more explanation, please contact us."
+msgstr "Pour plus d´explications, veuillez nous contacter."
+
+#: common/cron/task-activation.php:39
+#, php-format
+msgid ""
+"If you want to renew your subscription for the plan '%s', please make a "
+"paypal payment of this amount %s for the following paypal account '%s'."
+msgstr ""
+"Si vous souhaitez renouveler votre inscription pour l´abonnement '%s', "
+"veuillez effectuer un paiement paypal du montant %s pour le compte paypal "
+"suivant '%s'."
+
+#: common/cron/task-activation.php:47
+#, php-format
+msgid "The %s team"
+msgstr "L´équipe %s"
+
+#: common/cron/task-activation.php:51
+msgid "Subscriber account plan expiration"
+msgstr "Expiration de l´abonnement pour votre compte adhérent"
+
+#: config/labels/back-end/labels.php:10
+msgid ""
+"Accepts paying group registrations. Gives access to restricted content for "
+"members or groups of members."
+msgstr ""
+"Accepte les inscriptions payantes de groupes. Donne l'accès à du contenu "
+"restreint pour des membres ou groupe de membres."
+
+#: config/labels/back-end/labels.php:17
+msgctxt "title_postbox"
+msgid "Status"
+msgstr "Statut"
+
+#: config/labels/back-end/labels.php:18
+msgctxt "title_postbox"
+msgid "Saving"
+msgstr "Enregistement en cours"
+
+#: config/labels/back-end/labels.php:20
+msgid "Publish"
+msgstr "Publier"
+
+#: config/labels/back-end/labels.php:21
+#: core/admin/features/form/AdminForm.php:469
+msgid "Published"
+msgstr "Publié"
+
+#: config/labels/back-end/labels.php:22
+msgctxt "edition"
+msgid "Draft"
+msgstr "Brouillon"
+
+#: config/labels/back-end/labels.php:23
+msgctxt "menu_title"
+msgid "Add new"
+msgstr "Ajouter"
+
+#: config/labels/back-end/labels.php:25
+msgid "Delete Permanently"
+msgstr "Supprimer définitivement"
+
+#: config/labels/back-end/labels.php:26
+msgid "Restore"
+msgstr "Rétablir"
+
+#: config/labels/back-end/labels.php:27
+#: core/helpers/php/php-helpers-before-config.php:1331
+#, php-format
+msgid ""
+"To get WP Group Subscription premium options, <a href=\"%s\">please activate "
+"your license key</a>."
+msgstr ""
+"Pour obtenir les options premium de WP Group Subscriptions, <a href=\"%s"
+"\">veuillez activer votre clé de licence</a>."
+
+#: config/labels/back-end/labels.php:35
+msgctxt "menu_title"
+msgid "Plans"
+msgstr "Abonnements"
+
+#: config/labels/back-end/labels.php:36
+msgctxt "menu_title"
+msgid "All Plans"
+msgstr "Tous les abonnements"
+
+#: config/labels/back-end/labels.php:37
+msgctxt "search-list-item"
+msgid "Search plans"
+msgstr "Rechercher par nom"
+
+#: config/labels/back-end/labels.php:38
+msgctxt "plans"
+msgid "Plan Name"
+msgstr "Nom"
+
+#: config/labels/back-end/labels.php:39
+msgctxt "plans"
+msgid "Author"
+msgstr "Auteur"
+
+#: config/labels/back-end/labels.php:40
+msgctxt "plans"
+msgid "Start Date"
+msgstr "Date création"
+
+#: config/labels/back-end/labels.php:41
+msgctxt "plans"
+msgid "All"
+msgstr "Tous"
+
+#: config/labels/back-end/labels.php:42
+msgctxt "plans"
+msgid "Published"
+msgid_plural "Published"
+msgstr[0] "Publié"
+msgstr[1] "Publiés"
+
+#: config/labels/back-end/labels.php:43
+msgctxt "plans"
+msgid "Draft"
+msgid_plural "Drafts"
+msgstr[0] "Brouillon"
+msgstr[1] "Brouillons"
+
+#: config/labels/back-end/labels.php:44
+msgctxt "plans"
+msgid "Trash"
+msgstr "Corbeille"
+
+#: config/labels/back-end/labels.php:45
+msgctxt "search-list-item"
+msgid "name"
+msgstr "nom"
+
+#: config/labels/back-end/labels.php:48
+msgctxt "page_title"
+msgid "Plans"
+msgstr "Abonnements"
+
+#: config/labels/back-end/labels.php:49
+msgctxt "menu_title"
+msgid "New Plan"
+msgstr "Nouvel Abonnement"
+
+#: config/labels/back-end/labels.php:50
+msgctxt "new_page_title"
+msgid "New Plan"
+msgstr "Nouvel Abonnement"
+
+#: config/labels/back-end/labels.php:51
+msgctxt "menu_title"
+msgid "Edit Plan"
+msgstr "Modifier l'Abonnement"
+
+#: config/labels/back-end/labels.php:52
+msgctxt "edit_page_title"
+msgid "Edit Plan"
+msgstr "Modifier l'Abonnement"
+
+#: config/labels/back-end/labels.php:53
+msgctxt "title_display"
+msgid "plan"
+msgstr "de l'abonnement"
+
+#: config/labels/back-end/labels.php:54
+msgctxt "title_display_placeholder"
+msgid "plan"
+msgstr "de l'abonnement"
+
+#: config/labels/back-end/labels.php:55
+msgctxt "title_postbox"
+msgid "Plan"
+msgstr "Abonnement"
+
+#: config/labels/back-end/labels.php:57
+msgctxt "edit-error"
+msgid "plan"
+msgstr "abonnement"
+
+#: config/labels/back-end/labels.php:58
+msgctxt "editable_item"
+msgid "The plan"
+msgstr "L'abonnement"
+
+#: config/labels/back-end/labels.php:59
+msgid "plan"
+msgstr "de l'abonnement"
+
+#: config/labels/back-end/labels.php:60
+#: core/common/features/paypal/Paypal.php:436
+#: core/common/features/paypal/Paypal.php:464
+msgid "Price"
+msgstr "Prix"
+
+#: config/labels/back-end/labels.php:61
+msgid "Add currency"
+msgstr "Ajouter une devise"
+
+#: config/labels/back-end/labels.php:62
+msgid "Change currency"
+msgstr "Changer la devise"
+
+#: config/labels/back-end/labels.php:63
+msgid "Free"
+msgstr "Gratuit"
+
+#: config/labels/back-end/labels.php:64
+msgid "Plan duration"
+msgstr "Durée de l'abonnement"
+
+#: config/labels/back-end/labels.php:65
+msgid "Valid until"
+msgstr "Valide jusqu'au"
+
+#: config/labels/back-end/labels.php:66
+msgid "Unlimited"
+msgstr "Illimité"
+
+#: config/labels/back-end/labels.php:67
+msgid "Plan type"
+msgstr "Type d'abonnement"
+
+#: config/labels/back-end/labels.php:69
+msgid "Group"
+msgstr "Groupe"
+
+#: config/labels/back-end/labels.php:70
+msgid "Minimum of member accounts"
+msgstr "Nombre minimum de compte membres"
+
+#: config/labels/back-end/labels.php:71
+msgid "Maximum of member accounts"
+msgstr "Nombre maximum de compte membres"
+
+#: config/labels/back-end/labels.php:72
+msgid "Change ceiling"
+msgstr "Changer le plafond"
+
+#: config/labels/back-end/labels.php:73
+msgid "Account Creation Form"
+msgstr "Formulaire de création de compte"
+
+#: config/labels/back-end/labels.php:74
+msgid "New form plan"
+msgstr "Nouveau formulaire d´abonnement"
+
+#: config/labels/back-end/labels.php:75
+msgid "Basic single subscription form"
+msgstr "Form. basique d'abonnement individuel"
+
+#: config/labels/back-end/labels.php:76
+msgid "Basic multiple subscription form"
+msgstr "Form. basique d'abonnement groupe"
+
+#: config/labels/back-end/labels.php:84
+msgctxt "menu_title"
+msgid "Members"
+msgstr "Membres"
+
+#: config/labels/back-end/labels.php:85
+msgctxt "menu_title"
+msgid "All Members"
+msgstr "Tous les membres"
+
+#: config/labels/back-end/labels.php:86 config/labels/back-end/labels.php:87
+msgctxt "members"
+msgid "Member Name"
+msgstr "Nom du membre"
+
+#: config/labels/back-end/labels.php:88
+msgctxt "members"
+msgid "Email"
+msgstr "Email"
+
+#: config/labels/back-end/labels.php:89
+msgctxt "members"
+msgid "Group Name"
+msgstr "Nom du groupe"
+
+#: config/labels/back-end/labels.php:90
+msgctxt "members"
+msgid "Last Connection"
+msgstr "Dernière connexion"
+
+#: config/labels/back-end/labels.php:91
+msgctxt "members"
+msgid "Last Activation"
+msgstr "Dernière activation"
+
+#: config/labels/back-end/labels.php:92
+msgctxt "members"
+msgid "Start Date"
+msgstr "Date création"
+
+#: config/labels/back-end/labels.php:93
+msgctxt "members"
+msgid "All"
+msgstr "Tous"
+
+#: config/labels/back-end/labels.php:94
+msgctxt "members"
+msgid "Published"
+msgid_plural "Published"
+msgstr[0] "Publié"
+msgstr[1] "Publiés"
+
+#: config/labels/back-end/labels.php:95 config/labels/back-end/labels.php:96
+msgctxt "members"
+msgid "Trash"
+msgid_plural "Trash"
+msgstr[0] "Corbeille"
+msgstr[1] "Corbeille"
+
+#: config/labels/back-end/labels.php:97
+msgctxt "search-list-item"
+msgid "Search members"
+msgstr "Rechercher les membres"
+
+#: config/labels/back-end/labels.php:98 config/labels/back-end/labels.php:135
+msgctxt "search-list-item"
+msgid "First name"
+msgstr "Prénom"
+
+#: config/labels/back-end/labels.php:99 config/labels/back-end/labels.php:136
+msgctxt "search-list-item"
+msgid "Last name"
+msgstr "Nom de famille"
+
+#: config/labels/back-end/labels.php:100 config/labels/back-end/labels.php:137
+msgctxt "search-list-item"
+msgid "Email"
+msgstr "Email"
+
+#: config/labels/back-end/labels.php:101 config/labels/back-end/labels.php:138
+msgctxt "search-list-item"
+msgid "Group name"
+msgstr "Nom du groupe"
+
+#: config/labels/back-end/labels.php:104
+msgctxt "menu_title"
+msgid "New Member"
+msgstr "Nouveau Membre"
+
+#: config/labels/back-end/labels.php:105
+msgctxt "new_page_title"
+msgid "New Member"
+msgstr "Nouveau Membre"
+
+#: config/labels/back-end/labels.php:106
+msgctxt "menu_title"
+msgid "Edit Member"
+msgstr "Modifier un Membre"
+
+#: config/labels/back-end/labels.php:107
+msgctxt "edit_page_title"
+msgid "Edit Member"
+msgstr "Modifier un Membre"
+
+#: config/labels/back-end/labels.php:108
+msgctxt "editable_item"
+msgid "The member"
+msgstr "Le membre"
+
+#: config/labels/back-end/labels.php:109
+msgctxt "edit-error"
+msgid "member"
+msgstr "membre"
+
+#: config/labels/back-end/labels.php:117
+msgctxt "menu_title"
+msgid "Accounting"
+msgstr "Comptabilité"
+
+#: config/labels/back-end/labels.php:118
+msgctxt "page_title"
+msgid "Accounting Overview"
+msgstr "Comptabilité - Vue d'ensemble"
+
+#: config/labels/back-end/labels.php:119
+msgctxt "menu_title"
+msgid "Overview"
+msgstr "Vue d'ensemble"
+
+#: config/labels/back-end/labels.php:125
+msgctxt "page_title"
+msgid "Subscriber Accounts"
+msgstr "Comptes Adhérent"
+
+#: config/labels/back-end/labels.php:126
+msgctxt "menu_title"
+msgid "Subscriber Accounts"
+msgstr "Comptes Adhérent"
+
+#: config/labels/back-end/labels.php:127
+msgctxt "menu_title"
+msgid "Subs. Accounts"
+msgstr "Comptes Adhérent"
+
+#: config/labels/back-end/labels.php:128
+msgctxt "subscribers"
+msgid "Subs. Number"
+msgstr "N° Adhérent"
+
+#: config/labels/back-end/labels.php:129
+msgctxt "subscribers"
+msgid "Representative"
+msgstr "Représentant"
+
+#: config/labels/back-end/labels.php:130
+msgctxt "subscribers"
+msgid "Group Name"
+msgstr "Nom du groupe"
+
+#: config/labels/back-end/labels.php:131
+msgctxt "subscribers"
+msgid "Plan"
+msgstr "Abonnement"
+
+#: config/labels/back-end/labels.php:132
+msgctxt "subscribers"
+msgid "Start Date"
+msgstr "Date création"
+
+#: config/labels/back-end/labels.php:133
+msgctxt "subscribers"
+msgid "Last subscription"
+msgstr "Dernière inscription"
+
+#: config/labels/back-end/labels.php:134
+msgctxt "search-list-item"
+msgid "Search subscribers"
+msgstr "Rechercher les adhérents"
+
+#: config/labels/back-end/labels.php:139
+msgctxt "search-list-item"
+msgid "Plan name"
+msgstr "Abonnement"
+
+#: config/labels/back-end/labels.php:140
+msgctxt "subscribers"
+msgid "All"
+msgstr "Tous"
+
+#: config/labels/back-end/labels.php:141
+msgctxt "subscribers"
+msgid "Disabled"
+msgid_plural "Disabled"
+msgstr[0] "Désactivé"
+msgstr[1] "Désactivés"
+
+#: config/labels/back-end/labels.php:142
+msgctxt "subscribers"
+msgid "Active"
+msgid_plural "Active"
+msgstr[0] "Activé"
+msgstr[1] "Activés"
+
+#: config/labels/back-end/labels.php:143 config/labels/back-end/labels.php:144
+msgctxt "subscribers"
+msgid "Trash"
+msgid_plural "Trash"
+msgstr[0] "Corbeille"
+msgstr[1] "Corbeille"
+
+#: config/labels/back-end/labels.php:147
+msgctxt "menu_title"
+msgid "New account"
+msgstr "Nouveau compte"
+
+#: config/labels/back-end/labels.php:148
+msgctxt "menu_title"
+msgid "New Subscriber"
+msgstr "Nouveau Compte Adhérent"
+
+#: config/labels/back-end/labels.php:149
+msgctxt "new_page_title"
+msgid "New Subscriber"
+msgstr "Nouveau Compte Adhérent"
+
+#: config/labels/back-end/labels.php:150
+msgctxt "menu_title"
+msgid "Edit Subscriber"
+msgstr "Modifier le Compte Adhérent"
+
+#: config/labels/back-end/labels.php:151
+msgctxt "edit_page_title"
+msgid "Edit Subscriber"
+msgstr "Modifier le Compte Adhérent"
+
+#: config/labels/back-end/labels.php:152
+msgctxt "editable_item"
+msgid "The subscriber"
+msgstr "L'adhérent"
+
+#: config/labels/back-end/labels.php:153
+msgctxt "edit-error"
+msgid "subscriber"
+msgstr "adhérent"
+
+#: config/labels/back-end/labels.php:159
+msgctxt "message_item_name"
+msgid "The payment"
+msgstr "Le payment"
+
+#: config/labels/back-end/labels.php:161
+msgctxt "page_title"
+msgid "Payments"
+msgstr "Paiements"
+
+#: config/labels/back-end/labels.php:162
+msgctxt "menu_title"
+msgid "Payments"
+msgstr "Paiements"
+
+#: config/labels/back-end/labels.php:163
+msgctxt "payments"
+msgid "All"
+msgstr "Tous"
+
+#: config/labels/back-end/labels.php:164
+msgctxt "payments"
+msgid "Assigned"
+msgid_plural "Assigned"
+msgstr[0] "Attribué"
+msgstr[1] "Attribués"
+
+#: config/labels/back-end/labels.php:165
+msgctxt "payments"
+msgid "Unassigned"
+msgid_plural "Unassigned"
+msgstr[0] "Non attribué"
+msgstr[1] "Non attribués"
+
+#: config/labels/back-end/labels.php:166
+msgctxt "payments"
+msgid "Number"
+msgstr "Numéro"
+
+#: config/labels/back-end/labels.php:167
+msgctxt "payments"
+msgid "Status"
+msgstr "Statut"
+
+#: config/labels/back-end/labels.php:168
+msgctxt "payments"
+msgid "Date"
+msgstr "Date"
+
+#: config/labels/back-end/labels.php:169
+msgctxt "payments"
+msgid "Email"
+msgstr "Email"
+
+#: config/labels/back-end/labels.php:170
+msgctxt "payments"
+msgid "Amount"
+msgstr "Montant"
+
+#: config/labels/back-end/labels.php:171
+msgctxt "payments"
+msgid "Type"
+msgstr "Type"
+
+#: config/labels/back-end/labels.php:172
+msgctxt "payments"
+msgid "Subscriber account"
+msgstr "Comptes Adhérent"
+
+#: config/labels/back-end/labels.php:173
+msgctxt "payments"
+msgid "Plan"
+msgstr "Abonnement"
+
+#: config/labels/back-end/labels.php:174
+msgctxt "payments"
+msgid "Transaction"
+msgstr "Transaction"
+
+#: config/labels/back-end/labels.php:181
+msgctxt "page_title"
+msgid "Settings - WP Group Subscription"
+msgstr "Réglages - WP Group Subscription"
+
+#: config/labels/back-end/labels.php:182
+msgid "Verification API secret key is invalid"
+msgstr "La clé secrête de vérification de l´API est invalide"
+
+#: config/labels/back-end/labels.php:183
+msgid "License key activated"
+msgstr "License activée"
+
+#: config/labels/back-end/labels.php:184
+msgid "The license key has been deactivated for this domain"
+msgstr "La license a été désactivée pour ce domaine"
+
+#: config/labels/back-end/labels.php:186
+msgid "currency"
+msgstr "devise"
+
+#: config/labels/back-end/labels.php:187
+msgid "paypal"
+msgstr "paypal"
+
+#: config/labels/back-end/labels.php:188
+msgid "profile-page"
+msgstr "page-profile"
+
+#: config/labels/back-end/labels.php:189 core/init.php:63
+msgid "premium"
+msgstr "premium"
+
+#: config/labels/back-end/labels.php:190
+msgid "recaptcha"
+msgstr "recaptcha"
+
+#: config/labels/back-end/labels.php:191
+msgid "plans"
+msgstr "abonnements"
+
+#: config/labels/back-end/labels.php:192
+msgid "license-key"
+msgstr "cle-license"
+
+#: config/labels/front-end/labels.php:10
+msgid "Single subscription"
+msgstr "Inscription individuel"
+
+#: config/labels/front-end/labels.php:11
+msgid "Group subscription"
+msgstr "Inscription de groupe"
+
+#: config/labels/front-end/labels.php:12
+msgid "Teacher"
+msgstr "Enseignant"
+
+#: config/labels/front-end/labels.php:13
+msgid "Student"
+msgstr "Etudiant"
+
+#: config/labels/front-end/labels.php:14
+msgid "Sympathizer"
+msgstr "Sympathisant"
+
+#: config/labels/front-end/labels.php:15
+msgid "Teachers"
+msgstr "Enseignants"
+
+#: config/labels/front-end/labels.php:16
+msgid "Students"
+msgstr "Etudiants"
+
+#: config/labels/front-end/labels.php:17
+msgid "Sympathizers"
+msgstr "Sympathisants"
+
+#: config/labels/front-end/labels.php:18
+msgctxt "title_display"
+msgid "Account creation"
+msgstr "Création de compte"
+
+#: config/labels/front-end/labels.php:19
+msgid "Creation of the subscription account"
+msgstr "Création du compte adhérent"
+
+#: config/labels/front-end/labels.php:20
+msgid "Log in information"
+msgstr "Information de connexion"
+
+#: config/labels/front-end/labels.php:22
+msgid "Identity"
+msgstr "Identité"
+
+#: config/labels/front-end/labels.php:23
+msgid "First Name"
+msgstr "Prénom"
+
+#: config/labels/front-end/labels.php:24
+msgid "Last Name"
+msgstr "Nom"
+
+#: config/labels/front-end/labels.php:25
+msgid "Address"
+msgstr "Adresse"
+
+#: config/labels/front-end/labels.php:26
+msgid "Phone number"
+msgstr "Téléphone"
+
+#: config/labels/front-end/labels.php:27
+msgid "Number"
+msgstr "Numéro"
+
+#: config/labels/front-end/labels.php:28
+msgid "Street"
+msgstr "Rue"
+
+#: config/labels/front-end/labels.php:29
+msgid "Zip code"
+msgstr "Code postal"
+
+#: config/labels/front-end/labels.php:30
+msgid "City"
+msgstr "Ville"
+
+#: config/labels/front-end/labels.php:31
+msgid "Country"
+msgstr "Pays"
+
+#: config/labels/front-end/labels.php:32
+msgid "Representative"
+msgstr "Représentant"
+
+#: config/labels/front-end/labels.php:33
+msgid "Please insert your email"
+msgstr "Veuillez insérer votre email"
+
+#: config/labels/front-end/labels.php:34
+msgid "Please confirm your email"
+msgstr "Confirmez votre email"
+
+#: config/labels/front-end/labels.php:41
+#: front-end/shortcodes/my-profile/profile-subscription/views/view-profile-subscription.php:22
+msgid "Subscription"
+msgstr "Inscription"
+
+#: config/labels/front-end/labels.php:42
+msgid "Step 2 : Proceed to payment"
+msgstr "Étape 2 : Procéder au paiement"
+
+#: config/labels/front-end/labels.php:43
+msgid "Save member accounts"
+msgstr "Enregistrer les comptes membres"
+
+#: config/labels/front-end/labels.php:48
+msgid "Payment return"
+msgstr "Retour du paiement"
+
+#: config/labels/front-end/labels.php:49
+msgid "Payment successful!"
+msgstr "Paiement confirmé !"
+
+#: config/labels/front-end/labels.php:50
+msgid "Payment canceled!"
+msgstr "Paiement annulé !"
+
+#: config/labels/front-end/labels.php:51
+msgid "Canceled Reversal"
+msgstr "Remboursement annulé"
+
+#: config/labels/front-end/labels.php:52
+msgid "Completed"
+msgstr "Effectué"
+
+#: config/labels/front-end/labels.php:53
+msgid "Created"
+msgstr "Créé"
+
+#: config/labels/front-end/labels.php:54
+msgid "Denied"
+msgstr "Refusé"
+
+#: config/labels/front-end/labels.php:55
+msgid "Expired"
+msgstr "Expirés"
+
+#: config/labels/front-end/labels.php:56
+msgid "Failed"
+msgstr "Echoué"
+
+#: config/labels/front-end/labels.php:57
+msgid "Pending"
+msgstr "En attente"
+
+#: config/labels/front-end/labels.php:58
+msgid "Refunded"
+msgstr "Remboursé"
+
+#: config/labels/front-end/labels.php:59
+msgid "Reversed"
+msgstr "Annulé"
+
+#: config/labels/front-end/labels.php:60
+msgid "Processed"
+msgstr "Accepté"
+
+#: config/labels/front-end/labels.php:61
+msgid "Voided"
+msgstr "Autorisation annulé"
+
+#: config/labels/front-end/labels.php:67
+msgid "Number of member accounts :"
+msgstr "Nombre de comptes membres :"
+
+#: config/labels/front-end/labels.php:68
+msgid "Add member account"
+msgstr "Ajouter un compte membre"
+
+#: config/labels/front-end/labels.php:69
+msgid "Remove member account"
+msgstr "Supprimer un compte membre"
+
+#: config/labels/front-end/labels.php:70
+#, php-format
+msgid "Member email %d"
+msgstr "Email membre %d"
+
+#: config/labels/front-end/labels.php:71
+msgid "member"
+msgstr "membre"
+
+#: config/labels/front-end/labels.php:72
+msgid "account"
+msgstr "compte"
+
+#: config/labels/front-end/labels.php:77
+msgid "Account activation"
+msgstr "Activation du compte"
+
+#: config/labels/front-end/labels.php:79
+msgid "Activate my account"
+msgstr "Activer mon compte"
+
+#: config/labels/front-end/labels.php:84
+msgid "Sign in"
+msgstr "Se connecter"
+
+#: config/labels/front-end/labels.php:85
+msgid "First sign in"
+msgstr "Première connexion"
+
+#: config/labels/front-end/labels.php:86
+msgid "Sign out"
+msgstr "Se déconnecter"
+
+#: core/Uninstall.php:64
+#, php-format
+msgid ""
+"Before uninstall the plugin '%s'. You should uninstall the addons before."
+msgstr ""
+"Avant de désinstaller le plugin '%s'. Vous devriez désinstaller les \"addons"
+"\" (options premium) avant."
+
+#: core/admin/H4AAdminPlugin.php:134
+msgid "Settings"
+msgstr "Réglages"
+
+#: core/admin/features/csv/list-table/ListTableFromCSVTemplate.php:87
+#, php-format
+msgid ""
+"This log report is too heavy to display it as table list. File weight : %s "
+"bytes."
+msgstr ""
+"Le rapport des registres est trop lourd pour s´afficher dans le tableau. "
+"Poids du fichier :  %s octets."
+
+#: core/admin/features/form/AdminForm.php:101
+#, php-format
+msgid "Enter the %s name here"
+msgstr "Saisissez le nom %s ici"
+
+#: core/admin/features/form/AdminForm.php:356
+msgid "Edit"
+msgstr "Modifier"
+
+#: core/admin/features/form/AdminForm.php:357
+#, php-format
+msgid "Edit %s"
+msgstr "Modifier %s"
+
+#: core/admin/features/form/AdminForm.php:389
+msgid "OK"
+msgstr "OK"
+
+#: core/admin/features/form/AdminForm.php:449
+msgid "Save Draft"
+msgstr "Enregistrer le brouillon"
+
+#: core/admin/features/form/AdminForm.php:470
+#: core/admin/features/page/template/list-table/H4A_List_Table.php:494
+msgid "Draft"
+msgstr "Brouillon"
+
+#: core/admin/features/form/AdminForm.php:489
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: core/admin/features/log_reports/LogTemplate.php:40
+msgid "Delete All Log Reports"
+msgstr "Supprimer tous les registres"
+
+#: core/admin/features/page/settings/SettingsTemplate.php:135
+msgid "This option is not active yet."
+msgstr "Cette option n'est pas encore active."
+
+#: core/admin/features/page/settings/SettingsTemplate.php:136
+msgid "This option is a Premium version feature. It's included in ... "
+msgstr ""
+"Cette option est une fonctionnalité de la version Premium. C'est inclus "
+"dans ... "
+
+#: core/admin/features/page/settings/SettingsTemplate.php:137
+msgid "addon"
+msgstr "addon"
+
+#: core/admin/features/page/settings/SettingsTemplate.php:139
+msgid "Get this option in a 3 steps"
+msgstr "Obtenir cette option en 3 étapes"
+
+#: core/admin/features/page/settings/SettingsTemplate.php:140
+msgid "Get the premium version"
+msgstr "Obtenir la version Premium"
+
+#: core/admin/features/page/settings/SettingsTemplate.php:141
+msgid "Insert your license key."
+msgstr "Insérer votre clé de licence."
+
+#: core/admin/features/page/settings/SettingsTemplate.php:142
+msgid "Enjoy with the new settings!"
+msgstr "Profitez des nouveaux paramètres !"
+
+#: core/admin/features/page/template/EditItemTemplate.php:91
+#, php-format
+msgid "%s not found !"
+msgstr "Aucun %s  !"
+
+#: core/admin/features/page/template/EditItemTemplate.php:133
+#: front-end/shortcodes/activation/ActivationShortcode.php:164
+#: front-end/shortcodes/my-profile/profile-account/ProfileAccountShortcode.php:61
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:585
+msgid "It is must match with the previous input"
+msgstr "Cela doit être identique à votre saisie dans le champ précédent"
+
+#: core/admin/features/page/template/EditableListTableFromDBTemplate.php:124
+msgid ""
+"Any action was not run! Please select an action in the bulk actions combobox."
+msgstr ""
+"Aucune action a été exécutée ! Veuillez sélectionner une action dans le menu "
+"déroulant des actions groupées."
+
+#: core/admin/features/page/template/EditableListTableFromDBTemplate.php:208
+msgid "Add new"
+msgstr "Ajouter"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:141
+msgid "List View"
+msgstr "Vue en liste"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:142
+msgid "Excerpt View"
+msgstr "Vue en résumé"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:296
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:299
+msgid "No items found."
+msgstr "Aucun élément trouvé."
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:346
+#, php-format
+msgid "By %s"
+msgstr "Par %s"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:456
+msgid "Select bulk action"
+msgstr "Sélectionnez une action groupée"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:458
+msgid "Bulk Actions"
+msgstr "Actions groupées"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:468
+msgid "Apply"
+msgstr "Appliquer"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:523
+msgid "Show more details"
+msgstr "Voir le détail"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:583
+msgid "Filter by date"
+msgstr "Filtrer par date"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:585
+msgid "All dates"
+msgstr "Toutes les dates"
+
+#. translators: 1: month name, 2: 4-digit year
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:598
+#, php-format
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:648
+#, php-format
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s commentaire"
+msgstr[1] "%s commentaires"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:649
+#, php-format
+msgid "%s approved comment"
+msgid_plural "%s approved comments"
+msgstr[0] "%s commentaire approuvé"
+msgstr[1] "%s commentaires approuvés"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:650
+#, php-format
+msgid "%s pending comment"
+msgid_plural "%s pending comments"
+msgstr[0] "%s commentaire en attente"
+msgstr[1] "%s commentaires en attente"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:655
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:667
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:680
+msgid "No comments"
+msgstr "Pas de commentaire"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:667
+msgid "No approved comments"
+msgstr "Aucun commentaire approuvé"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:680
+msgid "No pending comments"
+msgstr "Aucun commentaire en attente"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:752
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:1364
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s élément"
+msgstr[1] "%s éléments"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:788
+msgid "First page"
+msgstr "Première page"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:798
+msgid "Previous page"
+msgstr "Page precédante"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:805
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:808
+msgid "Current Page"
+msgstr "Page courrante"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:814
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%1$s de %2$s"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:821
+msgid "Next page"
+msgstr "Page suivante"
+
+#: core/admin/features/page/template/list-table/H4A_List_Table_Base.php:831
+msgid "Last page"
+msgstr "Page précédente"
+
+#: core/admin/features/update/Puc/v4p4/Plugin/UpdateChecker.php:396
+msgid "Check for updates"
+msgstr "Vérifier les mises à jour"
+
+#: core/admin/features/update/Puc/v4p4/Plugin/UpdateChecker.php:433
+msgid "View details"
+msgstr "Voir le détail"
+
+#: core/admin/features/update/Puc/v4p4/Plugin/UpdateChecker.php:456
+#, php-format
+msgid "More information about %s"
+msgstr "Plus d´information à propos de %s"
+
+#: core/admin/features/update/Puc/v4p4/Plugin/UpdateChecker.php:549
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "L´extension %s a été mise à jour. "
+
+#: core/admin/features/update/Puc/v4p4/Plugin/UpdateChecker.php:551
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Une nouvelle version de l'extension %s est disponible."
+
+#: core/admin/features/update/Puc/v4p4/Plugin/UpdateChecker.php:553
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr ""
+"Il est impossible de déterminer si des mises à jour sont disponibles pour %s."
+
+#: core/admin/features/update/Puc/v4p4/Plugin/UpdateChecker.php:559
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Statut inconnu du vérificateur de mise à jour \"%s\""
+
+#: core/admin/features/update/Puc/v4p4/Vcs/PluginUpdateChecker.php:99
+msgid "There is no changelog available."
+msgstr "Il n’y a aucun historique des mises à jour disponible."
+
+#: core/common/features/countries/Countries.php:29
+msgid "Please select your country"
+msgstr "Veuillez sélectionner votre pays"
+
+#: core/common/features/currencies/Currencies.php:29
+msgid "Please select the currency"
+msgstr "Veuillez sélectionner votre devise"
+
+#: core/common/features/form/CommonForm.php:894
+#: core/common/features/form/CommonForm.php:897
+#: core/common/features/form/CommonForm.php:906
+#: core/common/features/form/CommonForm.php:908
+msgid "email"
+msgstr "email"
+
+#: core/common/features/form/CommonForm.php:901
+#: core/common/features/paypal/Paypal.php:462
+msgid "Email"
+msgstr "Email"
+
+#: core/common/features/form/CommonForm.php:963
+msgid "group name"
+msgstr "nom du groupe"
+
+#: core/common/features/form/CommonForm.php:990
+#: core/common/features/form/CommonForm.php:994
+msgid "phone code"
+msgstr "code téléphone"
+
+#: core/common/features/form/CommonForm.php:997
+msgid "phone number"
+msgstr "numéro de téléphone"
+
+#: core/common/features/form/CommonForm.php:1024
+msgid "street number"
+msgstr "numéro de voie"
+
+#: core/common/features/form/CommonForm.php:1027
+msgid "street name"
+msgstr "nom de la rue"
+
+#: core/common/features/form/CommonForm.php:1030
+msgid "zip code"
+msgstr "code postal"
+
+#: core/common/features/form/CommonForm.php:1033
+msgid "city"
+msgstr "ville"
+
+#: core/common/features/form/CommonForm.php:1037
+msgid "country"
+msgstr "pays"
+
+#: core/common/features/form/CommonForm.php:1063
+#: core/common/features/form/CommonForm.php:1067
+msgid "password"
+msgstr "mot de passe"
+
+#: core/common/features/form/CommonForm.php:1105
+#, php-format
+msgid "Your %s is too short ( minimum %s characters )"
+msgstr "Votre %s est trop court ( minimum %s caractères )"
+
+#: core/common/features/form/CommonForm.php:1117
+#, php-format
+msgid "Your %s is too long"
+msgstr "Votre %s est trop long"
+
+#: core/common/features/form/CommonForm.php:1130
+#: core/common/features/form/CommonForm.php:1134
+#, php-format
+msgid "Invalid %s format"
+msgstr "Le format du champ '%s' n'est pas valide"
+
+#: core/common/features/form/CommonForm.php:1160
+#, php-format
+msgid "The %s value is not a number format"
+msgstr "La valeur %s n'est pas un format de type nombre"
+
+#: core/common/features/form/CommonForm.php:1182
+#, php-format
+msgid "%s does not match"
+msgstr "%s n'est pas identique"
+
+#: core/common/features/form/CommonForm.php:1205
+#, php-format
+msgid "The member %s already exists!"
+msgstr "Le membre %s existe déjà !"
+
+#: core/common/features/form/CommonForm.php:1207
+msgid "This account already exists!"
+msgstr "Ce compte existe déjà !"
+
+#: core/common/features/form/CommonForm.php:1210
+#, php-format
+msgid "This %s already exists!"
+msgstr "Le '%s' existe déjà !"
+
+#: core/common/features/item/EditableItem.php:155
+#, php-format
+msgctxt "edition-item"
+msgid "The %s ( id : '%s' ) cannot be updated!"
+msgstr "%s ( id : '%s' ) ne peut pas être mis à jour !"
+
+#: core/common/features/paypal/Paypal.php:309
+#, php-format
+msgid "Paypal request was successful - number of payments imported '%d'."
+msgstr ""
+"Requête Paypal effectuée avec succès - nombre de paiements importés  '%d'."
+
+#: core/common/features/paypal/Paypal.php:312
+msgid "Paypal request was successful - There is no payment to import."
+msgstr "Requête Paypal effectuée avec succès - Aucun paiement à importer."
+
+#: core/common/features/paypal/Paypal.php:317
+#, php-format
+msgid ""
+"Impossible to get Paypal Payments because of a Paypal error system : '%s'."
+msgstr ""
+"Impossible d´obtenir les Paiements Paypal dû à une erreur du système de "
+"Paypal : '%s'."
+
+#: core/common/features/paypal/Paypal.php:343
+msgid "Payment confirmation"
+msgstr "Confirmation de paiement"
+
+#: core/common/features/paypal/Paypal.php:432
+#, php-format
+msgid "The subscription payment for the plan '%s' was completed."
+msgstr "Le paiement de l'adhésion pour l'abonnement '%s' a été effectué."
+
+#: core/common/features/paypal/Paypal.php:435
+#: core/common/features/paypal/Paypal.php:463
+msgid "Plan Name"
+msgstr "Nom de l'abonnement"
+
+#: core/common/features/paypal/Paypal.php:439
+msgid "We thank you for your confidence."
+msgstr "Nous vous remercions de votre confiance."
+
+#: core/common/features/paypal/Paypal.php:444
+#: core/common/features/paypal/Paypal.php:468
+#, php-format
+msgid "Completed order - plan : %s "
+msgstr "Commande effectuée - abonnement : %s "
+
+#: core/common/features/paypal/Paypal.php:458
+#, php-format
+msgid "New subscription payment for the plan '%s' was completed."
+msgstr "Un nouveau paiement d'adhésion pour l'abonnement '%s' a été effectué."
+
+#: core/common/features/paypal/Paypal.php:461
+msgid "Full Name"
+msgstr "Nom"
+
+#: core/front-end/features/form/FrontEndForm.php:111
+msgid "Field required"
+msgstr "Champ requis"
+
+#: core/helpers/php/php-helpers-before-config.php:627
+msgid "Year(s)"
+msgstr "Année(s)"
+
+#: core/helpers/php/php-helpers-before-config.php:628
+msgid "Month(s)"
+msgstr "Mois"
+
+#: core/helpers/php/php-helpers-before-config.php:629
+msgid "Day(s)"
+msgstr "Jour(s)"
+
+#: core/helpers/php/php-helpers-before-config.php:1274
+msgid "WP Group Subscription license activation error : "
+msgstr "Erreur de l´activation de la license WP Group Subscription : "
+
+#: core/helpers/php/php-helpers-before-config.php:1281
+#: core/helpers/php/php-helpers-before-config.php:1385
+msgid "Please complete correctly license login information."
+msgstr ""
+"Veuillez remplir correctement les informations de connexion de licence."
+
+#: core/helpers/php/php-helpers-before-config.php:1378
+msgid "WP Group Subscription license deactivation error : "
+msgstr "Erreur de la désactivation de la license WP Group Subscription : "
+
+#: core/helpers/php/wp-helpers-after-config.php:416
+#: core/helpers/php/wp-helpers-after-config.php:522
+#, php-format
+msgid "Error : The table '%s' does not exist."
+msgstr "Erreur: la table' %s'n'existe pas."
+
+#: core/helpers/php/wp-helpers-after-config.php:464
+#, php-format
+msgid ""
+"Impossible to insert a new database column '%s' because it´s already exists "
+"in the table '%s'."
+msgstr ""
+"Impossible d'insérer une nouvelle colonne '%s' dans la base de données car "
+"elle existe déjà dans la table ' %s'."
+
+#: core/helpers/php/wp-helpers-after-config.php:471
+#, php-format
+msgid ""
+"Impossible to delete the column '%s' because it does not exist in the table "
+"'%s'."
+msgstr ""
+"Impossible de supprimer la colonne' %s', car elle n'existe pas dans la "
+"table' %s'."
+
+#: core/helpers/php/wp-helpers-after-config.php:493
+#, php-format
+msgid ""
+"Impossible to insert the new data '%s' because it´s already exists in the "
+"table '%s'."
+msgstr ""
+"Impossible d'insérer la donnée  '%s' dans la base de données car elle existe "
+"déjà dans la table ' %s'."
+
+#: core/helpers/php/wp-helpers-after-config.php:500
+#, php-format
+msgid ""
+"Impossible to delete the data '%s' because it does not exist in the table "
+"'%s'."
+msgstr ""
+"Impossible de supprimer les données' %s'car elles n'existent pas dans la "
+"table' %s'."
+
+#: core/helpers/php/wp-helpers-after-config.php:906
+msgid ""
+"Error system ! If you see this message, please contact the administrator of "
+"this Web site."
+msgstr ""
+"Erreur du système ! Si vous voyez ce message, veuillez contacter "
+"l'administrateur de ce site Web."
+
+#: core/helpers/php/wp-helpers-after-config.php:912
+#, php-format
+msgid ""
+"Error system ! If you see this message, please contact the developer of %s."
+msgstr ""
+"Erreur du système ! Si vous voyez ce message, veuillez contacter le "
+"développeur de %s."
+
+#: core/helpers/php/wp-helpers-after-config.php:918
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:391
+#: front-end/shortcodes/plans-list/PlansListShortcode.php:74
+msgid ""
+"Settings missing error - if you see this message, please contact the "
+"administrator"
+msgstr ""
+"Erreur de paramètres manquant - si vous voyez ce message, veuillez contacter "
+"l'administrateur"
+
+#: front-end/shortcodes/activation/ActivationShortcode.php:90
+#: front-end/shortcodes/payment-return/views/view-payment-return.php:11
+#, php-format
+msgid "Welcome to %s!"
+msgstr "Bienvenu sur %s !"
+
+#: front-end/shortcodes/activation/ActivationShortcode.php:91
+msgid ""
+"To access all documents, please activate your member account by filling in "
+"the following information."
+msgstr ""
+"Pour accéder à tous les documents, veuillez activer votre compte en "
+"remplissant les informations suivantes."
+
+#: front-end/shortcodes/activation/ActivationShortcode.php:144
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:463
+#, php-format
+msgid "Please check the box: \"%s\""
+msgstr "Veuillez cocher la case \"%s\""
+
+#: front-end/shortcodes/activation/ActivationShortcode.php:144
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:463
+msgid "I am not a robot"
+msgstr "Je ne suis pas un robot"
+
+#: front-end/shortcodes/login/LoginShortcode.php:36
+msgid "Connection"
+msgstr "Connexion"
+
+#: front-end/shortcodes/login/LoginShortcode.php:76
+msgid "You are logged in. You can now access all the contents."
+msgstr ""
+"Vous êtes connecté. Vous pouvez accéder maintenant à l'ensemble du contenu."
+
+#: front-end/shortcodes/login/LoginShortcode.php:82
+msgid "Congratulations!"
+msgstr "Félicitations !"
+
+#: front-end/shortcodes/login/LoginShortcode.php:83
+msgid "Your account has been activated."
+msgstr "Votre compte a été activé."
+
+#: front-end/shortcodes/login/LoginShortcode.php:84
+msgid "You can now access all content by logging in."
+msgstr "Vous pouvez désormais accéder à tous les contenus en vous connectant."
+
+#: front-end/shortcodes/my-profile/MyProfileShortcode.php:43
+msgid "Your account information was updated successfully !"
+msgstr "Vos informations de compte ont été mises à jour avec succès !"
+
+#: front-end/shortcodes/my-profile/MyProfileShortcode.php:176
+#: front-end/shortcodes/my-profile/views/view-my-profile.php:4
+msgid "My profile"
+msgstr "Mon profile"
+
+#: front-end/shortcodes/my-profile/profile-account/views/view-profile-account.php:9
+msgid "Account"
+msgstr "Compte"
+
+#: front-end/shortcodes/my-profile/profile-subscription/views/view-profile-subscription.php:29
+msgid "Current Plan"
+msgstr "Abonnement choisi"
+
+#: front-end/shortcodes/my-profile/profile-subscription/views/view-profile-subscription.php:33
+msgid "Subscription status"
+msgstr "Statut de I'inscription"
+
+#: front-end/shortcodes/my-profile/profile-subscription/views/view-profile-subscription.php:69
+msgid "Last Subscription date"
+msgstr "Dernière inscription"
+
+#: front-end/shortcodes/my-profile/profile-subscription/views/view-profile-subscription.php:73
+msgid "Your Payments"
+msgstr "Vos Paiements"
+
+#: front-end/shortcodes/my-profile/profile-subscription/views/view-profile-subscription.php:81
+msgid "Date"
+msgstr "Date"
+
+#: front-end/shortcodes/my-profile/profile-subscription/views/view-profile-subscription.php:82
+msgid "Amount"
+msgstr "Montant"
+
+#: front-end/shortcodes/payment-return/PaymentReturnShortcode.php:84
+#: front-end/shortcodes/payment-return/PaymentReturnShortcode.php:113
+#: front-end/shortcodes/payment-return/PaymentReturnShortcode.php:118
+msgid "Payment checking error!"
+msgstr "Erreur de la vérification du paiement !"
+
+#: front-end/shortcodes/payment-return/PaymentReturnShortcode.php:105
+msgid "The payment has been done."
+msgstr "Le paiement a bien été effectué."
+
+#: front-end/shortcodes/payment-return/views/view-payment-return.php:26
+msgid "You can now access all the contents by logging in."
+msgstr ""
+"<br/> Vous pouvez désormais accéder à tous les contenus en vous connectant."
+
+#: front-end/shortcodes/payment-return/views/view-payment-return.php:33
+msgid "Go to Login Page"
+msgstr "Allez sur la page de connexion"
+
+#: front-end/shortcodes/payment-return/views/view-payment-return.php:37
+msgid "<br/>You can now create all member accounts."
+msgstr "<br/>Vous pouvez désormais créer tous les comptes membres."
+
+#: front-end/shortcodes/payment-return/views/view-payment-return.php:43
+msgid "Last step : create all member accounts"
+msgstr "Dernière étape : créer les comptes membres"
+
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:240
+msgid "Thanks for your subscription!"
+msgstr "Merci pour votre inscription !"
+
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:241
+msgid "To activate your account, please proceed to payment."
+msgstr "Pour activer votre compte, veuillez procéder au paiement."
+
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:242
+msgid "To create all user accounts, please proceed to payment."
+msgstr ""
+"Pour créer tous les comptes utilisateurs, veuillez procéder au paiement."
+
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:328
+msgid "Include your account as member"
+msgstr "Inclure votre compte en tant que membre"
+
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:365
+msgid "Thank you!"
+msgstr "Merci !"
+
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:365
+msgid ""
+"Emails for members of your group have been sent. Each member can now "
+"activate his account by clicking on the link in this email."
+msgstr ""
+"Les emails pour les membres de votre groupe ont été envoyés. Chaque membre "
+"peut maintenant activer son compte en cliquant sur le lien dans cet email."
+
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:594
+msgid "You have already entered this email"
+msgstr "Vous avez déjà saisi cet email"
+
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:595
+msgid "Member email"
+msgstr "Email membre"
+
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:596
+msgid "Please insert the email"
+msgstr "Veuillez insérer l'email"
+
+#: front-end/shortcodes/plan-forms/PlanFormsShortcode.php:597
+msgid "Please confirm the email"
+msgstr "Veuillez confirmer l'email"
+
+#: front-end/shortcodes/plan-forms/views/view-plan-forms.php:18
+msgid "Subscription completed"
+msgstr "Inscription terminé"
+
+#: front-end/shortcodes/plans-list/PlansListShortcode.php:78
+msgid "You are logged in."
+msgstr "Vous êtes connecté."
+
+#: front-end/shortcodes/plans-list/PlansListShortcode.php:80
+msgid "To see all plans, please log out."
+msgstr "Pour voir les abonnements, veuillez vous déconnecter."
+
+#: front-end/shortcodes/plans-list/PlansListShortcode.php:83
+msgid "Go to sign out page"
+msgstr "Allez sur la page de déconnexion"
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:32
+msgid "Free!"
+msgstr "Gratuit !"
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:41
+#, php-format
+msgid "<br/>Member access for %s day"
+msgid_plural "<br/>Member access for %s days"
+msgstr[0] "<br/>Accès membre pour %s jour"
+msgstr[1] "<br/>Accès membre pour %s jours"
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:43
+#, php-format
+msgid " / day"
+msgid_plural " / %s days"
+msgstr[0] " / jour"
+msgstr[1] " / %s jours"
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:49
+#, php-format
+msgid "<br/>Member access for %s month"
+msgid_plural "<br/>Member access for %s months"
+msgstr[0] "<br/>Accès membre pour %s mois"
+msgstr[1] "<br/>Accès membre pour %s mois"
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:51
+#, php-format
+msgid " / month"
+msgid_plural " / %s months"
+msgstr[0] " / mois"
+msgstr[1] " / %s mois"
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:57
+#, php-format
+msgid "<br/>Member access for %s year"
+msgid_plural "<br/>Member access for %s years"
+msgstr[0] "<br/>Accès membre pour %s an"
+msgstr[1] "<br/>Accès membre pour %s ans"
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:59
+#, php-format
+msgid " / year"
+msgid_plural " / %s years"
+msgstr[0] " / an"
+msgstr[1] " / %s ans"
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:65
+#, php-format
+msgid "<br/>Member access until %s"
+msgstr "<br/>Accès membre jusqu'au %s"
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:70
+msgid "<br/>Unlimited plan "
+msgstr "<br/>Abonnement illimité "
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:78
+#, php-format
+msgid "Between %d and %d user accounts authorized."
+msgstr "Entre %d et %d comptes d’utilisateurs autorisés."
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:80
+#, php-format
+msgid "Until %d user accounts authorized."
+msgstr "Jusqu'à %d comptes utilisateurs autorisés."
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:82
+#, php-format
+msgid "For %d user accounts and more."
+msgstr "Pour %d comptes utilisateurs et plus."
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:84
+msgid "Unlimited user account creation."
+msgstr "Création de compte utilisateur illimité."
+
+#: front-end/shortcodes/plans-list/views/view-plans-list.php:93
+msgid "Sign up"
+msgstr "S'inscrire"
+
+#: front-end/shortcodes/restricted-content/RestrictedContentShortcode.php:21
+msgid "Content only for subscribed members."
+msgstr "Contenu réservé uniquement pour les abonnés."
+
+#. Plugin Name of the plugin/theme
+msgid "@initials@ - @plugin_name@"
+msgstr "@initials@ - @plugin_name@"
+
+#. Plugin URI of the plugin/theme
+msgid "@plugin_uri@"
+msgstr "@plugin_uri@"
+
+#. Description of the plugin/theme
+msgid "@description@"
+msgstr "@description@"
+
+#. Author of the plugin/theme
+msgid "@author@"
+msgstr "@author@"
+
+#. Author URI of the plugin/theme
+msgid "@author_uri@"
+msgstr "@author_uri@"
+
+#~ msgid "WGS - WP Group Subscriptions"
+#~ msgstr "WGS - WP Group Subscriptions"
+
+#~ msgid "http://wp-group-subscriptions.com"
+#~ msgstr "http://wp-group-subscriptions.com"
+
+#~ msgid "Hive 4 Apps"
+#~ msgstr "Hive 4 Apps"
+
+#~ msgid "http://www.hive-4-apps.org/"
+#~ msgstr "http://www.hive-4-apps.org/"
+
+#~ msgid "Impossible to restore the plan '%s' from the trash!"
+#~ msgstr "Impossible de récupérer l´abonnement '%s' de la corbeille !"
+
+#~ msgid "By Plan name"
+#~ msgstr "Par nom d´abonnement"
+
+#~ msgid "WP Group Subscription License Deactivation Error : "
+#~ msgstr "Erreur de la Désactivation de la License WP Group Subscription : "
+
+#~ msgid "WP Group Subscription License Activation Error : "
+#~ msgstr "Erreur de l´Activation de la License WP Group Subscription : "
+
+#~ msgctxt "message_item_name"
+#~ msgid "The"
+#~ msgstr "Le"
+
+#~ msgid "Marketing"
+#~ msgstr "Marketing"
+
+#~ msgid "Tag"
+#~ msgstr "Etiquette"
+
+#~ msgid "Ex: New!"
+#~ msgstr "Ex: Nouveau !"
+
+#~ msgid "New document"
+#~ msgstr "Nouveau document"
+
+#~ msgctxt "TinyMCE"
+#~ msgid "Formats"
+#~ msgstr "Formats"
+
+#~ msgctxt "TinyMCE"
+#~ msgid "Headings"
+#~ msgstr "Rubriques"
+
+#~ msgid "Heading 1"
+#~ msgstr "Titre 1"
+
+#~ msgid "Heading 2"
+#~ msgstr "Titre 2"
+
+#~ msgid "Heading 3"
+#~ msgstr "Titre 3"
+
+#~ msgid "Heading 4"
+#~ msgstr "Titre 4"
+
+#~ msgid "Heading 5"
+#~ msgstr "Titre 5"
+
+#~ msgid "Heading 6"
+#~ msgstr "Titre 6"
+
+#~ msgctxt "HTML tag"
+#~ msgid "Pre"
+#~ msgstr "Pre"
+
+#~ msgctxt "HTML tag"
+#~ msgid "Address"
+#~ msgstr "Adresse"
+
+#~ msgid "Source code"
+#~ msgstr "Code source"
+
+#~ msgid "Cut"
+#~ msgstr "Couper"
+
+#~ msgid "Select all"
+#~ msgstr "Sélectionnez tout"
+
+#~ msgid "Numbered list"
+#~ msgstr "Liste numérotée"
+
+#~ msgctxt "Name of link anchor (TinyMCE)"
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid "Encoding"
+#~ msgstr "Encodement"
+
+#~ msgid "Advanced"
+#~ msgstr "Options avancées"
+
+#~ msgid "Image description"
+#~ msgstr "Description image"
+
+#~ msgid "Date/time"
+#~ msgstr "Date/Heure"
+
+#~ msgid "Media"
+#~ msgstr "Média"
+
+#~ msgid "Preview"
+#~ msgstr "Prévisualiser"
+
+#~ msgid "Save"
+#~ msgstr "Sauvegarder"
+
+#~ msgid "Remove link"
+#~ msgstr "Supprimer le lien"
+
+#~ msgid "Insert link"
+#~ msgstr "Insérer un lien"
+
+#~ msgid "Custom color"
+#~ msgstr "Couleur personnalisée"
+
+#~ msgctxt "find/replace"
+#~ msgid "Next"
+#~ msgstr "Suivant"
+
+#~ msgid "Check Spelling"
+#~ msgstr "Vérifier l’orthographe"
+
+#~ msgid "Delete table"
+#~ msgstr "Supprimer le tableau"
+
+#~ msgid "Delete row"
+#~ msgstr "Supprimer la rangée"
+
+#~ msgid "Delete column"
+#~ msgstr "Supprimer la colonne"
+
+#~ msgctxt "table cell alignment attribute"
+#~ msgid "None"
+#~ msgstr "Aucun"
+
+#~ msgid "Cell type"
+#~ msgstr "Type de cellule"
+
+#~ msgctxt "TinyMCE menu"
+#~ msgid "Edit"
+#~ msgstr "Modifier"
+
+#~ msgctxt "TinyMCE menu"
+#~ msgid "View"
+#~ msgstr "Vue"
+
+#~ msgctxt "TinyMCE menu"
+#~ msgid "Table"
+#~ msgstr "Tableau"
+
+#~ msgctxt "TinyMCE menu"
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgid "No alignment"
+#~ msgstr "Pas d'alignement"
+
+#~ msgid "Remove"
+#~ msgstr "Supprimer"
+
+#~ msgid "Link options"
+#~ msgstr "Options de lien"
+
+#~ msgid "Editor toolbar"
+#~ msgstr "Barre d´édition"
+
+#~ msgid "Action"
+#~ msgstr "Action"
+
+#~ msgid "Search"
+#~ msgstr "Rechercher"
+
+#~ msgid "Add Link"
+#~ msgstr "Ajouter un lien"
+
+#~ msgid "Add Media"
+#~ msgstr "Ajouter un média"
+
+#~ msgctxt "message_item_name"
+#~ msgid "plan"
+#~ msgstr "L'abonnement"
+
+#, fuzzy
+#~| msgid "member"
+#~ msgctxt "message_item_name"
+#~ msgid "member"
+#~ msgstr "membre"
+
+#~ msgctxt "message_item_name"
+#~ msgid "subscriber"
+#~ msgstr "L´adhérent"
+
+#~ msgid "The subscriber '%s %s' has been trashed."
+#~ msgstr "L'adhérent '%s %s' a été jeté dans la corbeille."
+
+#~ msgid "The member '%s %s' has been trashed."
+#~ msgstr "Le membre '%s %s' a été jeté dans la corbeille."
+
+#~ msgid "unlimited"
+#~ msgstr "illimité"
+
+#~ msgid "Not Assigned"
+#~ msgstr "Non attribués"
+
+#~ msgctxt "payments"
+#~ msgid "Not Assigned"
+#~ msgstr "Non attribués"
+
+#~ msgctxt "plans"
+#~ msgid "Drafts"
+#~ msgstr "Brouillons"
+
+#~ msgid "Add new member"
+#~ msgstr "Ajouter un nouveau membre"
+
+#~ msgid "Start Date"
+#~ msgstr "Date création"
+
+#~ msgid "Restore &#8220;%s&#8221; from the Trash"
+#~ msgstr "Restaurer &#8220;%s&#8221; depuis la corbeille"
+
+#~ msgid "Delete &#8220;%s&#8221; permanently"
+#~ msgstr "Supprimer &#8220;%s&#8221; définitivement"
+
+#~ msgid "Trash &#8220;%s&#8221;"
+#~ msgstr "Mettre à la corbeille &#8220;%s&#8221;"
+
+#~ msgid "Impossible to move the plan '%s' to trash !"
+#~ msgstr "Impossible de mettre l´abonnement '%s' à la corbeille !"
+
+#~ msgctxt "editable_item"
+#~ msgid "%s '%s' already exists !"
+#~ msgstr "%s '%s' existe déjà !"
+
+#~ msgctxt "save-plan-edition"
+#~ msgid "plan"
+#~ msgstr "l'abonnement"
+
+#~ msgid "Log out"
+#~ msgstr "Se déconnecter"
+
+#~ msgid "See"
+#~ msgstr "Visualiser"
+
+#~ msgid "Subscriber Form not found !"
+#~ msgstr "Formulaire d'adhésion non trouvé !"
+
+#~ msgid "New %s"
+#~ msgstr "Ajouter %s"
+
+#~ msgid "Add new %s"
+#~ msgstr "Ajouter %s"
+
+#~ msgctxt "edit-error"
+#~ msgid "Plan"
+#~ msgstr "Abonnement"
+
+#~ msgctxt "payments"
+#~ msgid "Plan Name"
+#~ msgstr "Nom de l'abonnement"
+
+#~ msgctxt "editable-item"
+#~ msgid "%s '%s' already exists !"
+#~ msgstr "%s '%s' existe déjà !"
+
+#~ msgctxt "new_page_title"
+#~ msgid "subscriber"
+#~ msgstr "un adhérent"
+
+#~ msgctxt "edit_page_title"
+#~ msgid "subscriber"
+#~ msgstr "l'adhérent"
+
+#~ msgid "A subscriber with this email '%s' already exists !"
+#~ msgstr "Un adhérent avec l'email '%s' existe déjà !"
+
+#, fuzzy
+#~| msgid "Subscriber account"
+#~ msgid "Custom view accounting"
+#~ msgstr "Compte adhérent"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgctxt "plans"
+#~ msgid "Active <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Active <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Activé <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Activés <span class=\"count\">(%s)</span>"
+
+#~ msgctxt "plans"
+#~ msgid "Disabled <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Disabled <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Désactivé <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Désactivés <span class=\"count\">(%s)</span>"
+
+#~ msgctxt "plans"
+#~ msgid "Trash <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Trash <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Corbeille <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Corbeille <span class=\"count\">(%s)</span>"
+
+#~ msgid "Payment status"
+#~ msgstr "Etat du paiement"
+
+#~ msgid ""
+#~ "Your account is not active yet. Please complete your subscription by "
+#~ "clicking <a href=\"%s\">here</a>"
+#~ msgstr ""
+#~ "Votre compte n'est pas encore actif. Complétez votre abonnement en "
+#~ "cliquant <a href=\"%s\">ici</a>"
+
+#~ msgid "Impossible to move the subscriber '%s' to trash !"
+#~ msgstr "Impossible de mettre l'adhérent '%s' à la corbeille !"
+
+#~ msgid "Impossible to restore the subscriber '%s' from the trash !"
+#~ msgstr "Impossible de sortir l'adhérent '%s' de la corbeille !"
+
+#~ msgid "Impossible to update the subscriber ( id : '%s' ) !"
+#~ msgstr "Impossible de mettre à jour l'adhérent ( id : '%s' ) !"
+
+#~ msgctxt "edit_page_title"
+#~ msgid "Edit %s"
+#~ msgstr "Modifier %s"
+
+#~ msgctxt "new_page_title"
+#~ msgid "New %s"
+#~ msgstr "Ajouter %s"
+
+#~ msgctxt "new_page_title"
+#~ msgid "plan"
+#~ msgstr "un abonnement"
+
+#~ msgctxt "edit_page_title"
+#~ msgid "plan"
+#~ msgstr "l'abonnement"
+
+#~ msgctxt "new_page_title"
+#~ msgid "Plan"
+#~ msgstr "un abonnement"
+
+#~ msgctxt "edit_page_title"
+#~ msgid "Plan"
+#~ msgstr "l'abonnement"
+
+#~ msgctxt "title_page_new"
+#~ msgid "plan"
+#~ msgstr "un abonnement"
+
+#~ msgctxt "title_page_edit"
+#~ msgid "plan"
+#~ msgstr "l'abonnement"
+
+#~ msgctxt "title_page_new"
+#~ msgid "subscriber"
+#~ msgstr "un adhérent"
+
+#~ msgctxt "title_page_edit"
+#~ msgid "subscriber"
+#~ msgstr "l'adhérent"
+
+#~ msgid "Add New %s"
+#~ msgstr "Ajouter %s"
+
+#~ msgctxt "menu_item"
+#~ msgid "Plans"
+#~ msgstr "Abonnements"
+
+#~ msgctxt "save-subscriber-edition"
+#~ msgid "subcriber"
+#~ msgstr "l'adhérent"
+
+#~ msgid "This subscriber could not be trashed !"
+#~ msgstr "Cet adhérent n'a pas pu être déplacé dans la corbeille !"
+
+#~ msgid "This subscriber could not be untrashed !"
+#~ msgstr "Cet adhérent n'a pas pu être sorti de la corbeille !"
+
+#~ msgid "This subscriber could not be deleted !"
+#~ msgstr "Cet adhérent n'a pas pu être supprimé !"
+
+#~ msgctxt "subscribers"
+#~ msgid "Trash <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Trash <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Corbeille <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Corbeille <span class=\"count\">(%s)</span>"
+
+#~ msgid "This plan could not be untrashed !"
+#~ msgstr "Cet abonnement n'a pas pu être déplacé dans la corbeille !"
+
+#~ msgctxt "plans"
+#~ msgid "Published <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Published <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Publié <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Publiés <span class=\"count\">(%s)</span>"
+
+#~ msgctxt "plans"
+#~ msgid "Draft <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Drafts <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Brouillon <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Brouillons <span class=\"count\">(%s)</span>"
+
+#~ msgid "Subscription Forms"
+#~ msgstr "Formulaires d'Abonnement"
+
+#~ msgid "Subscription Form"
+#~ msgstr "Formulaire d'abonnement"
+
+#~ msgid "Delete &#8220;%s&#8221;"
+#~ msgstr "Supprimer &#8220;%s&#8221;"
+
+#~ msgctxt "subscribers_list"
+#~ msgid "Active"
+#~ msgstr "Activés"
+
+#~ msgctxt "subscribers_list"
+#~ msgid "Disabled"
+#~ msgstr "Désactivés"
+
+#~ msgid "Subscriber Successfully updated!"
+#~ msgstr "Mise à jour"
+
+#, fuzzy
+#~| msgid "Successfully saved!"
+#~ msgid "Subscriber Successfully saved!"
+#~ msgstr "Enregistré avec succès !"
+
+#~ msgid "Modify"
+#~ msgstr "Modifier"
+
+#~ msgid "Select another plan"
+#~ msgstr "Sélectionner un autre abonnement"
+
+#~ msgid "Failed to save !"
+#~ msgstr "L'enregistrement a échoué !"
+
+#~ msgid "Failed to update !"
+#~ msgstr "La mise à jour a échoué !"
+
+#~ msgid "Status:"
+#~ msgstr "État&nbsp;:"
+
+#~ msgid "Edit status"
+#~ msgstr "Modifier l’état"
+
+#~ msgctxt "title_page"
+#~ msgid "plan"
+#~ msgstr "un abonnement"
+
+#~ msgid "Category"
+#~ msgstr "Catégorie"
+
+#~ msgid "Refresh payments"
+#~ msgstr "Rafraichir les paiements"
+
+#~ msgid "Ceiling of the number of member accounts"
+#~ msgstr "Plafond du nombre de comptes membres"
+
+#~ msgid "Add new plan"
+#~ msgstr "Ajouter un nouvel abonnement"
+
+#~ msgid "All forms"
+#~ msgstr "Tous les formulaires"
+
+#, fuzzy
+#~| msgid "This account already exists"
+#~ msgid "The member ( %s ) already exists !"
+#~ msgstr "Ce compte existe déjà"
+
+#~ msgid "Member account information"
+#~ msgstr "Information du compte membre"
+
+#~ msgid "Feature soon"
+#~ msgstr "Fonctionnalité pour bientôt"
+
+#~ msgid "Log In"
+#~ msgstr "Se connecter"
+
+#~ msgid "Paiement return"
+#~ msgstr "Retour des paiements"
+
+#~ msgid "Only numbers are allowed for %s"
+#~ msgstr "Seuls les numéros sont autorisés pour %s"
+
+#~ msgid "Step 1"
+#~ msgstr "Etape 1"
+
+#~ msgid ""
+#~ "Error : Informations cannot be saved ! Please, contact us to resolve this."
+#~ msgstr ""
+#~ "Erreur : les informations ne peuvent pas être sauvegardées! S'il vous "
+#~ "plaît, contactez-nous pour résoudre ce problème."
+
+#~ msgid "Step 3"
+#~ msgstr "Etape 3"
+
+#~ msgid "User accounts creation"
+#~ msgstr "Création de compte utilisateur"
+
+#~ msgid "Number of user accounts :"
+#~ msgstr "Nombre de compte utilisateur :"
+
+#~ msgid "+ Add email"
+#~ msgstr "+ Ajouter un email"
+
+#~ msgid ""
+#~ "The payment has been done.<br/>Last step : You can now create all user "
+#~ "accounts."
+#~ msgstr ""
+#~ "Le paiement a été fait. <br/> Dernière étape : Vous pouvez désormais "
+#~ "créer tous les comptes d'utilisateurs."
+
+#~ msgid "The payment is pending. Paypal reason : %s."
+#~ msgstr "Le paiement est en attente. Raison Paypal:%s."
+
+#~ msgid "Payment error - status : %s"
+#~ msgstr "Erreur de paiement - état : %s"
+
+#, fuzzy
+#~| msgid "Address"
+#~ msgid "address"
+#~ msgstr "Adresse"
+
+#~ msgid "delayed_disbursement"
+#~ msgstr "décaissement retardé"
+
+#~ msgid "echeck"
+#~ msgstr "e-chèque"
+
+#, fuzzy
+#~| msgid "Currency"
+#~ msgid "multi_currency"
+#~ msgstr "Devise"
+
+#~ msgid "unilateral"
+#~ msgstr "unilatérale"
+
+#~ msgid "upgrade"
+#~ msgstr "mis à jour"
+
+#~ msgid "verify"
+#~ msgstr "vérifié"
+
+#~ msgid "other"
+#~ msgstr "autre"
+
+#~ msgid "Invalid start date : "
+#~ msgstr "Date de début non valide :"
+
+#~ msgid "Invalid number : "
+#~ msgstr "Numéro incorrect :"
+
+#, fuzzy
+#~| msgid "Payments"
+#~ msgid "Paiements"
+#~ msgstr "Paiements"
+
+#~ msgid "Enabling the HTTPS protocol for the page : \""
+#~ msgstr "Activation du protocole HTTPS pour la page : \""
+
+#~ msgid "Security"
+#~ msgstr "Sécurité"
+
+#~ msgid "http://URI_Of_Page_Describing_Plugin_and_Updates"
+#~ msgstr "http://URI_DE_LA_Page_Decrivant_L_EXTENSION_ET_LES_MISES_A_JOUR"
+
+#~ msgid "My Plugin"
+#~ msgstr "Mon extension"
+
+#~ msgid "A brief description of the Plugin."
+#~ msgstr "Une brève description de l'Extension."

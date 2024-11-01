@@ -1,0 +1,71 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Postboxes
+ * 2.0 - Payments modal
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Postboxes
+ * -----------------------------------------------------------------------------
+ */
+#post-body .edit-subscriber-status{
+    display: none;
+}
+
+#post-body .misc-pub-subscriber-status::before{
+    content: "\f173";
+    font: normal 20px/1 dashicons;
+}
+
+#post-body .misc-pub-plan-selected::before{ 
+    content: "\f524";
+    font: normal 18px/1 dashicons;
+}
+
+#post-body .misc-pub-plan-type::before{
+    content: "\f108";
+    font: normal 18px/1 dashicons;
+}
+
+#post-body .misc-pub-as-member:before{
+    content: "\f307";
+    font: normal 18px/1 dashicons;
+}
+
+#post-body .misc-pub-last-subscription::before{
+    content: "\f469";
+    font: normal 18px/1 dashicons;
+}
+
+#post-body .misc-pub-creation-date::before{
+    content: "\f508";
+    font: normal 18px/1 dashicons;
+}
+
+#post-body .misc-pub-last-payment::before{
+    content: "\f526";
+    font: normal 18px/1 dashicons;
+}
+
+#subscriber-status-display{
+    font-weight: 600;
+}
+
+
+input#save-plan { 
+    float: left;
+}
+
+/**
+ * 2.0 - Payments modal
+ * -----------------------------------------------------------------------------
+ */
+
+section.modal-main-content{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}

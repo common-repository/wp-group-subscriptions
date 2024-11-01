@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install xmlns="h4a:install" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/install.xsd" >
+	<database>
+		<tables>
+			<table name="currencies">
+				<column name="iso" type="char(3)" not_null="true" key="primary"/>
+				<column name="name" type="varchar(200)" not_null="true" key="unique"/>
+			</table>
+		</tables>
+		<inserts>
+			<insert table="currencies">
+				<data iso="KRW" name="(South) Korean Won"/>
+				<data iso="AFA" name="Afghanistan Afghani"/>
+				<data iso="ALL" name="Albanian Lek"/>
+				<data iso="DZD" name="Algerian Dinar"/>
+				<data iso="ADP" name="Andorran Peseta"/>
+				<data iso="AOK" name="Angolan Kwanza"/>
+				<data iso="ARS" name="Argentine Peso"/>
+				<data iso="AMD" name="Armenian Dram"/>
+				<data iso="AWG" name="Aruban Florin"/>
+				<data iso="AUD" name="Australian Dollar"/>
+				<data iso="BSD" name="Bahamian Dollar"/>
+				<data iso="BHD" name="Bahraini Dinar"/>
+				<data iso="BDT" name="Bangladeshi Taka"/>
+				<data iso="BBD" name="Barbados Dollar"/>
+				<data iso="BZD" name="Belize Dollar"/>
+				<data iso="BMD" name="Bermudian Dollar"/>
+				<data iso="BTN" name="Bhutan Ngultrum"/>
+				<data iso="BOB" name="Bolivian Boliviano"/>
+				<data iso="BWP" name="Botswanian Pula"/>
+				<data iso="BRL" name="Brazilian Real"/>
+				<data iso="GBP" name="British Pound"/>
+				<data iso="BND" name="Brunei Dollar"/>
+				<data iso="BGN" name="Bulgarian Lev"/>
+				<data iso="BUK" name="Burma Kyat"/>
+				<data iso="BIF" name="Burundi Franc"/>
+				<data iso="CAD" name="Canadian Dollar"/>
+				<data iso="CVE" name="Cape Verde Escudo"/>
+				<data iso="KYD" name="Cayman Islands Dollar"/>
+				<data iso="CLP" name="Chilean Peso"/>
+				<data iso="CLF" name="Chilean Unidades de Fomento"/>
+				<data iso="COP" name="Colombian Peso"/>
+				<data iso="XOF" name="Communauté Financière Africaine BCEAO - Francs"/>
+				<data iso="XAF" name="Communauté Financière Africaine BEAC, Francs"/>
+				<data iso="KMF" name="Comoros Franc"/>
+				<data iso="XPF" name="Comptoirs Français du Pacifique Francs"/>
+				<data iso="CRC" name="Costa Rican Colon"/>
+				<data iso="CUP" name="Cuban Peso"/>
+				<data iso="CYP" name="Cyprus Pound"/>
+				<data iso="CZK" name="Czech Republic Koruna"/>
+				<data iso="DKK" name="Danish Krone"/>
+				<data iso="YDD" name="Democratic Yemeni Dinar"/>
+				<data iso="DOP" name="Dominican Peso"/>
+				<data iso="XCD" name="East Caribbean Dollar"/>
+				<data iso="TPE" name="East Timor Escudo"/>
+				<data iso="ECS" name="Ecuador Sucre"/>
+				<data iso="EGP" name="Egyptian Pound"/>
+				<data iso="SVC" name="El Salvador Colon"/>
+				<data iso="EEK" name="Estonian Kroon (EEK)"/>
+				<data iso="ETB" name="Ethiopian Birr"/>
+				<data iso="EUR" name="Euro"/>
+				<data iso="FKP" name="Falkland Islands Pound"/>
+				<data iso="FJD" name="Fiji Dollar"/>
+				<data iso="GMD" name="Gambian Dalasi"/>
+				<data iso="GHC" name="Ghanaian Cedi"/>
+				<data iso="GIP" name="Gibraltar Pound"/>
+				<data iso="XAU" name="Gold, Ounces"/>
+				<data iso="GTQ" name="Guatemalan Quetzal"/>
+				<data iso="GNF" name="Guinea Franc"/>
+				<data iso="GWP" name="Guinea-Bissau Peso"/>
+				<data iso="GYD" name="Guyanan Dollar"/>
+				<data iso="HTG" name="Haitian Gourde"/>
+				<data iso="HNL" name="Honduran Lempira"/>
+				<data iso="HKD" name="Hong Kong Dollar"/>
+				<data iso="HUF" name="Hungarian Forint"/>
+				<data iso="INR" name="Indian Rupee"/>
+				<data iso="IDR" name="Indonesian Rupiah"/>
+				<data iso="XDR" name="International Monetary Fund (IMF) Special Drawing Rights"/>
+				<data iso="IRR" name="Iranian Rial"/>
+				<data iso="IQD" name="Iraqi Dinar"/>
+				<data iso="IEP" name="Irish Punt"/>
+				<data iso="ILS" name="Israeli Shekel"/>
+				<data iso="JMD" name="Jamaican Dollar"/>
+				<data iso="JPY" name="Japanese Yen"/>
+				<data iso="JOD" name="Jordanian Dinar"/>
+				<data iso="KHR" name="Kampuchean (Cambodian) Riel"/>
+				<data iso="KES" name="Kenyan Schilling"/>
+				<data iso="KWD" name="Kuwaiti Dinar"/>
+				<data iso="LAK" name="Lao Kip"/>
+				<data iso="LBP" name="Lebanese Pound"/>
+				<data iso="LSL" name="Lesotho Loti"/>
+				<data iso="LRD" name="Liberian Dollar"/>
+				<data iso="LYD" name="Libyan Dinar"/>
+				<data iso="MOP" name="Macau Pataca"/>
+				<data iso="MGF" name="Malagasy Franc"/>
+				<data iso="MWK" name="Malawi Kwacha"/>
+				<data iso="MYR" name="Malaysian Ringgit"/>
+				<data iso="MVR" name="Maldive Rufiyaa"/>
+				<data iso="MTL" name="Maltese Lira"/>
+				<data iso="MRO" name="Mauritanian Ouguiya"/>
+				<data iso="MUR" name="Mauritius Rupee"/>
+				<data iso="MXP" name="Mexican Peso"/>
+				<data iso="MNT" name="Mongolian Tugrik"/>
+				<data iso="MAD" name="Moroccan Dirham"/>
+				<data iso="MZM" name="Mozambique Metical"/>
+				<data iso="NAD" name="Namibian Dollar"/>
+				<data iso="NPR" name="Nepalese Rupee"/>
+				<data iso="ANG" name="Netherlands Antillian Guilder"/>
+				<data iso="YUD" name="New Yugoslavia Dinar"/>
+				<data iso="NZD" name="New Zealand Dollar"/>
+				<data iso="NIO" name="Nicaraguan Cordoba"/>
+				<data iso="NGN" name="Nigerian Naira"/>
+				<data iso="KPW" name="North Korean Won"/>
+				<data iso="NOK" name="Norwegian Kroner"/>
+				<data iso="OMR" name="Omani Rial"/>
+				<data iso="PKR" name="Pakistan Rupee"/>
+				<data iso="XPD" name="Palladium Ounces"/>
+				<data iso="PAB" name="Panamanian Balboa"/>
+				<data iso="PGK" name="Papua New Guinea Kina"/>
+				<data iso="PYG" name="Paraguay Guarani"/>
+				<data iso="PEN" name="Peruvian Nuevo Sol"/>
+				<data iso="PHP" name="Philippine Peso"/>
+				<data iso="XPT" name="Platinum, Ounces"/>
+				<data iso="PLN" name="Polish Zloty"/>
+				<data iso="QAR" name="Qatari Rial"/>
+				<data iso="RON" name="Romanian Leu"/>
+				<data iso="RUB" name="Russian Ruble"/>
+				<data iso="RWF" name="Rwanda Franc"/>
+				<data iso="WST" name="Samoan Tala"/>
+				<data iso="STD" name="Sao Tome and Principe Dobra"/>
+				<data iso="SAR" name="Saudi Arabian Riyal"/>
+				<data iso="SCR" name="Seychelles Rupee"/>
+				<data iso="SLL" name="Sierra Leone Leone"/>
+				<data iso="XAG" name="Silver, Ounces"/>
+				<data iso="SGD" name="Singapore Dollar"/>
+				<data iso="SKK" name="Slovak Koruna"/>
+				<data iso="SBD" name="Solomon Islands Dollar"/>
+				<data iso="SOS" name="Somali Schilling"/>
+				<data iso="ZAR" name="South African Rand"/>
+				<data iso="LKR" name="Sri Lanka Rupee"/>
+				<data iso="SHP" name="St. Helena Pound"/>
+				<data iso="SDP" name="Sudanese Pound"/>
+				<data iso="SRG" name="Suriname Guilder"/>
+				<data iso="SZL" name="Swaziland Lilangeni"/>
+				<data iso="SEK" name="Swedish Krona"/>
+				<data iso="CHF" name="Swiss Franc"/>
+				<data iso="SYP" name="Syrian Potmd"/>
+				<data iso="TWD" name="Taiwan Dollar"/>
+				<data iso="TZS" name="Tanzanian Schilling"/>
+				<data iso="THB" name="Thai Baht"/>
+				<data iso="TOP" name="Tongan Paanga"/>
+				<data iso="TTD" name="Trinidad and Tobago Dollar"/>
+				<data iso="TND" name="Tunisian Dinar"/>
+				<data iso="TRY" name="Turkish Lira"/>
+				<data iso="UGX" name="Uganda Shilling"/>
+				<data iso="AED" name="United Arab Emirates Dirham"/>
+				<data iso="UYU" name="Uruguayan Peso"/>
+				<data iso="USD" name="US Dollar"/>
+				<data iso="VUV" name="Vanuatu Vatu"/>
+				<data iso="VEF" name="Venezualan Bolivar"/>
+				<data iso="VND" name="Vietnamese Dong"/>
+				<data iso="YER" name="Yemeni Rial"/>
+				<data iso="CNY" name="Yuan (Chinese) Renminbi"/>
+				<data iso="ZRZ" name="Zaire Zaire"/>
+				<data iso="ZMK" name="Zambian Kwacha"/>
+				<data iso="ZWD" name="Zimbabwe Dollar"/>
+			</insert>
+		</inserts>
+	</database>
+</install>

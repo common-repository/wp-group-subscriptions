@@ -1,0 +1,58 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Notices
+ *  1.1 - Admin notices ( more options )
+ *  1.2 - Log notices
+ * 2.0 - Buttons
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Notices
+ * -----------------------------------------------------------------------------
+ */
+
+/* 1.1 - Admin notices ( more options ) */
+
+.notice-internal{
+    background: #fff;
+    border-left: 4px solid;
+    box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+    margin: 5px 15px 2px;
+    padding: 1px 12px;
+}
+
+.notice-internal-warning{
+    border-left-color: #ffb900;
+}
+
+/* 1.2 - Log notices */
+
+.notice-log-debug{
+    color: #1b7e5a;
+}
+
+.notice-log-info{
+    color: #31708f;
+}
+
+.notice-log-warning{
+    color: #8a6d3b;
+}
+
+.notice-log-error{
+    color: #dc3232;
+}
+
+/**
+ * 2.0 - Buttons
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-button[disabled]{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+

@@ -1,0 +1,46 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Alert classes
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Alert classes
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-alert{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.h4a-alert-error{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.h4a-alert-warning{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.h4a-alert-info{
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.h4a-alert-success{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-dismissable, .alert-dismissible {
+    padding-right: 35px;
+}

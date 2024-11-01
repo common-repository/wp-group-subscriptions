@@ -1,0 +1,16 @@
+.wgs-wrapper-spinner{ /* wsg-plan js */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wgs-input-wrapper-spinner{ /* wsg-plan js */
+    height: 26px;
+    border: 1px solid #C1C1C1;
+    width: 40px;
+}
+
+#post-body .misc-pub-plan-status::before{   /* Edit_Plan */
+    content: "\f173";
+    font: normal 20px/1 dashicons;
+}

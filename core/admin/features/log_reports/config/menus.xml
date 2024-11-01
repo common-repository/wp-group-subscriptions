@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus position="30" xmlns="h4a:menus" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/menus.xsd" >
+    <menu slug="tools.php">
+       <submenu slug="logs-{domain}">
+           <title>{initials} Debug</title>
+       </submenu> 
+    </menu>
+</menus>

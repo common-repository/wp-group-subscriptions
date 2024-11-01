@@ -1,0 +1,30 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Form base
+ * 2.0 - Row wrappers
+ * 3.0 - Columns
+ * 4.0 - Form controls
+ * 5.0 - Form labels
+ * 6.0 - Form checkbox & radios
+ * 7.0 - Buttons
+ * 8.0 - Required infos
+ * 9.0 - Alert classes
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Form base
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-fieldset{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.h4a-fieldset legend{
+    display: flex;
+    flex: 1;
+}

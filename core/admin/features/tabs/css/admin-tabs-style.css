@@ -1,0 +1,49 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Tabs fixes
+ * 2.0 - Show/Hide
+ * 3.0 - Layout
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Tabs fixes
+ * -----------------------------------------------------------------------------
+ */
+
+a.nav-tab{
+    cursor: pointer;
+}
+
+/**
+ * 2.0 - Show/Hide
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-option-tab {
+    padding:15px;
+}
+.h4a-hidden-tab {
+    display:none;
+}
+
+.h4a-active-tab{
+    display: flex !important;
+}
+
+/**
+ * 3.0 - Layout
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-active-tab table.form-table,
+.h4a-active-tab aside{
+    display: flex;
+    flex-direction: column;
+}
+
+.h4a-active-tab aside{
+    margin-left: 5px;
+}
+

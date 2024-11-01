@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<post_types xmlns="h4a:post_types" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/post-types.xsd">
+    <post_type slug="wgs-form-page"  name="Payment return"            public="true" exclude_from_search="false" show_in_menu="false" show_in_nav_menus="false" show_in_admin_bar="false" />
+    <post_type slug="wgs-return"     name="Payment return"            public="true" exclude_from_search="false" show_in_menu="false" show_in_nav_menus="false" show_in_admin_bar="false" rewrite="false"/>
+    <post_type slug="wgs-activation" name="Member account activation" public="true" exclude_from_search="false" show_in_menu="false" show_in_nav_menus="false" show_in_admin_bar="false" rewrite="false"/>
+    <post_type slug="wgs-login"      name="Sign in"                   public="true" exclude_from_search="false" show_in_menu="false" show_in_nav_menus="false" show_in_admin_bar="false" rewrite="false"/>
+    <post_type slug="wgs-profile"    name="My Profile"                public="true" exclude_from_search="false" show_in_menu="false" show_in_nav_menus="false" show_in_admin_bar="false" rewrite="false"/>
+</post_types>

@@ -1,0 +1,266 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Form base
+ * 2.0 - Row wrappers
+ * 3.0 - Columns
+ * 4.0 - Form controls
+ * 5.0 - Form labels
+ * 6.0 - Form checkbox & radios
+ * 7.0 - Buttons
+ * 8.0 - Required infos
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Form base
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-fieldset{
+    border: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom : 10px;
+    padding: .7rem;
+    border-radius: .3rem;
+}
+
+.h4a-fieldset legend{
+    width: initial;
+    padding: 0 5px;
+    margin-left: 5px;
+    margin-bottom: .5rem;
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+/**
+ * 2.0 - Row wrappers
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-form-group{
+    margin-bottom: 1rem;
+}
+
+.h4a-form-inline{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+}
+
+.h4a-form-inline > div{
+    padding: 0 5px 0 0;
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.h4a-form fieldset.h4a-fieldset .h4a-form-inline > div:last-child{
+    padding-right: 0;
+}
+
+/**
+ * 3.0 - Columns
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-col-12,
+.h4a-col-10,
+.h4a-col-8,
+.h4a-col-6,
+.h4a-col-4,
+.h4a-col-2,
+.h4a-col-1{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    display: flex;
+}
+
+.h4a-col-1{
+    width: 8.33%;
+}
+
+.h4a-col-2{
+    width: 16.66%;
+}
+
+.h4a-col-3{
+    width: 25%;
+}
+
+.h4a-col-4{
+    width: 33.33%;
+}
+
+.h4a-col-5{
+    width: 41.66%;
+}
+
+.h4a-col-6{
+    width: 50%;
+}
+
+.h4a-col-7{
+    width: 58.33%;
+}
+
+.h4a-col-8{
+    width: 66.66%;
+}
+
+.h4a-col-9{
+    width: 75%;
+}
+
+.h4a-col-10{
+    width: 83.33%;
+}
+
+.h4a-col-11{
+    width: 91.66%;
+}
+
+.h4a-col-12{
+    width: 100%;
+}
+
+
+/**
+ * 4.0 - Form controls
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-form-control{
+    display: inline-block;
+    width: 100%;
+    padding: .5rem .75rem !important;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: sans-serif;
+    vertical-align: middle;
+    color: #495057;
+    background: #fff padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.h4a-form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+}
+
+.h4a-form-control:disabled, .h4a-form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+select.h4a-form-control,
+select.h4a-form-control > option{
+    font-family: sans-serif;
+    font-size: 100%;
+    height: inherit !important;
+}
+
+.h4a-form-inline .h4a-form-control{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.h4a-form-control::placeholder {
+    color: #868e96;
+    opacity: 1;
+    font-size: calc( 2.5vh - 0.1vw );
+}
+
+/**
+ * 5.0 - Form labels
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-form-control-label{
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+.h4a-form-inline .h4a-form-control-label {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+
+/**
+ * 6.0 - Form checkbox & radios
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-form-check{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.h4a-form-check-label{
+    font-family: sans-serif;
+    line-height: 2rem;
+}
+
+.h4a-form-check-label > input[type=radio] + span,
+.h4a-form-check-label > input[type=checkbox] + span{
+    margin-left: .5rem;
+}
+
+.h4a-form-check-inline .h4a-form-check-label{
+    padding-left: 0;
+    vertical-align: middle;
+}
+
+.h4a-form-check-inlin .h4a-form-check-input {
+    position: relative;
+    margin-top: 0;
+    margin-right: .25rem;
+    margin-left: 0;
+}
+
+/**
+ * 7.0 - Buttons
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-button[disabled]{
+    opacity: 0.5;
+}
+
+/**
+ * 8.0 - Required infos
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-form-info{
+    font-family: sans-serif;
+    font-size: 100%;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.h4a-star-required{
+    margin-left: 2px;
+}

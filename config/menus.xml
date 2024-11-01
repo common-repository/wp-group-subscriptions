@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus position="30" xmlns="h4a:menus" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/menus.xsd" >
+    <separator />
+    <menu slug="plans" capability="manage_options">
+         <icon>dashicons-tickets-alt</icon>
+         <title>Plans</title>
+         <submenu slug="plans">
+             <title auto="true"/>
+         </submenu>
+         <submenu slug="edit-plan">
+            <title auto="true"/> 
+         </submenu>
+    </menu>
+    <menu slug="members">
+        <icon>dashicons-groups</icon>
+        <title>Members</title>
+        <submenu slug="members">
+            <title auto="true"/>
+        </submenu>
+        <submenu slug="edit-member">
+            <title auto="true"/>
+        </submenu>
+    </menu>
+    <menu slug="accounting">
+        <icon>dashicons-clipboard</icon>
+        <title>Accounting</title>
+        <submenu slug="accounting">
+            <title>Overview</title>
+        </submenu>
+        <submenu slug="subscribers">
+            <title>Subs. Accounts</title>
+        </submenu>
+        <submenu slug="edit-subscriber">
+            <title>New account</title>
+        </submenu>
+        <submenu slug="payments">
+            <title>Payments</title>
+        </submenu>
+    </menu>
+    <menu slug="options-general.php">
+         <submenu slug="settings-wp-group-subscriptions">
+             <title>WP Group Subs.</title>    
+         </submenu>
+    </menu>
+</menus>

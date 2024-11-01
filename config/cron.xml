@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cron xmlns="h4a:cron" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/cron.xsd" >
+    <task function="wgs_scheduled_task_activation" hook="wgs_scheduled_plan_expirations_checking" call="wgs_plan_expirations_checking"/>
+    <task function="wgs_scheduled_task_license" hook="wgs_scheduled_license_expirations_checking" call="wgs_license_expirations_checking"/>
+</cron>

@@ -1,0 +1,98 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Table
+ *  1.1 - .widefat
+ *  1.2 - .form-table
+ *  1.3 - both ( .widefat, .form-table )
+ *  1.4 - .h4a-form
+ * 2.0 - Postboxes
+ *  2.1 - Submitbox
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Table
+ * -----------------------------------------------------------------------------
+ */
+
+/* 1.1 - .widefat */
+.widefat .label{
+    font-weight: 600;
+}
+
+.widefat input[type=radio]{
+    margin: 0 0 -2px 0;
+}
+
+/* 1.2 - .form-table */
+
+table.form-table > tbody > tr > td{
+    display: inline-flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/* 1.3 - both ( .widefat, .form-table ) */
+
+table.form-table.widefat > tbody > tr > th{
+    padding-left: 5px;
+}
+
+table.form-table.widefat > tbody > tr > td{
+    align-items: stretch;
+    min-height: 28px;
+}
+
+table.form-table.widefat > tbody > tr > td > *{
+    margin : 0 2px;
+    display: inline-flex;
+    align-items: center;
+}
+
+table.form-table.widefat > tbody > tr > td > label > *{
+    display: inline-flex;
+    align-items: center;
+}
+
+table.form-table.widefat > tbody > tr > td > label > input[type="checkbox"]{
+    margin : 0;
+}
+
+/* 1.4 - .h4a-form */
+
+.h4a-form #major-publishing-actions{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.h4a-form #major-publishing-actions #delete-action{
+    margin-bottom: 15px;
+}
+
+/**
+ * 2.0 - Postboxes
+ * -----------------------------------------------------------------------------
+ */
+
+.h4a-form .postbox .hndle {
+    cursor: default;
+}
+
+#post-body .misc-pub-section::before{
+    speak: none;
+    display: inline-block;
+    margin-left: -1px;
+    padding-right: 3px;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #82878c;
+}
+
+/*  2.1 - Submitbox */
+.submitbox #minor-publishing-actions div:last-child{
+    margin-bottom : 10px;
+}

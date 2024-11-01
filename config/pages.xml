@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages xmlns="h4a:pages" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/pages.xsd">
+    <page slug="plans">
+        <template>
+            <title>Plans</title>
+            <list data="db" search="true" editable="true">
+                <item ref="plan" singular="plan" plural="plans"/>
+                <views>
+                    <default>
+                        <bulk_actions>
+                            <action value="trash">Move to Trash</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="edit">Edit</action>
+                            <action value="trash">Move to Trash</action>
+                        </row>
+                    </default>
+                    <view slug="published" singular="Published" plural="Published">
+                        <bulk_actions>
+                            <action value="trash">Move to Trash</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="edit">Edit</action>
+                            <action value="trash">Move to Trash</action>
+                        </row>
+                    </view>
+                    <view slug="draft" singular="Draft" plural="Drafts">
+                        <bulk_actions>
+                            <action value="trash">Move to Trash</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="edit">Edit</action>
+                            <action value="trash">Move to Trash</action>
+                        </row>
+                    </view>
+                    <view slug="trash" singular="Trash" plural="Trash">
+                        <bulk_actions>
+                            <action value="untrash">Restore</action>
+                            <action value="delete">Delete Permanently</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="untrash">Restore</action>
+                            <action value="delete">Delete Permanently</action>
+                        </row>
+                    </view>
+                </views>
+                <query>
+                    <select alias="p1" column="plan_id"/>
+                    <select alias="p1" column="plan_name" search="true" slabel="name"/>
+                    <select alias="p1" column="plan_type"/>
+                    <select alias="p1" column="start_date"/>
+                    <select alias="p1" column="expiration_date"/>
+                    <select alias="p1" column="status"/>
+                    <select alias="p1" column="price"/>
+                    <select alias="p1" column="publish_date"/>
+                    <select alias="p1" column="user_id"/>
+                    <select alias="u2" column="user_nicename"/>
+                    <from alias="p1" table="wgs_plans"/>
+                    <from alias="u2" table="users"/>
+                    <where condition="p1.user_id = u2.ID"/>
+                    <where filter="p1.status"/>
+                </query>
+                <output>
+                    <data slug="plan_id"/>
+                    <data slug="plan_name" />
+                    <data slug="user_nicename"/>
+                    <data slug="start_date"/>
+                    <data slug="status"/>
+                </output>
+                <columns>
+                    <column slug="cb" bind="plan_id" />
+                    <column slug="plan_name" sort="asc" primary="true">Plan Name</column>
+                    <column slug="user_nicename" sort="asc">Author</column>
+                    <column slug="start_date" sort="asc">Start Date</column>
+                </columns>
+            </list>
+        </template>
+    </page>
+    <page parent="plans" slug="edit-plan">
+        <template bind="H4APlugin\WPGroupSubs\Admin\Plans\Edit_Plan">
+            <title auto="true"/>
+            <item ref="plan"/>
+            <wp_ajax>
+                <function file="wp-group-subscriptions/common/classes/units/PlanForms.php" class="H4APlugin\WPGroupSubs\Common\PlanForms" name="getAllPlanFormsAsOptionsByAjax" />
+                <function file="wp-group-subscriptions/common/classes/units/Plan.php" class="H4APlugin\WPGroupSubs\Common\Plan" name="getIntervalByPlanTypeByAjax" />
+            </wp_ajax>
+        </template>
+    </page>
+    <page slug="members">
+        <template bind="H4APlugin\WPGroupSubs\Admin\Members\Members">
+            <title>Members</title>
+            <list data="db" editable="true" search="true" class="H4APlugin\WPGroupSubs\Admin\members\Members_List_Table">
+                <item ref="member" singular="member" plural="members"/>
+                <views>
+                    <default>
+                        <bulk_actions>
+                            <action value="trash">Move to Trash</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="edit">Edit</action>
+                            <action value="trash">Move to Trash</action>
+                        </row>
+                    </default>
+                    <view slug="published" singular="Published" plural="Published">
+                        <bulk_actions>
+                            <action value="trash">Move to Trash</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="edit">Edit</action>
+                            <action value="trash">Move to Trash</action>
+                        </row>
+                    </view>
+                    <view slug="trash" singular="Trash" plural="Trash">
+                        <bulk_actions>
+                            <action value="untrash">Restore</action>
+                            <action value="delete">Delete Permanently</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="untrash">Restore</action>
+                            <action value="delete">Delete Permanently</action>
+                        </row>
+                    </view>
+                </views>
+                <query>
+                    <select alias="m1" column="member_id"/>
+                    <select alias="m1" column="first_name" search="true" slabel="First name" />
+                    <select alias="m1" column="last_name" search="true" slabel="Last name"/>
+                    <select alias="m1" column="email" search="true" slabel="Email"/>
+                    <select alias="s2" column="group_name" search="true" slabel="Group name"/>
+                    <select alias="m1" column="last_connection"/>
+                    <select alias="m1" column="last_activation"/>
+                    <select alias="m1" column="start_date"/>
+                    <select alias="m1" column="status"/>
+                    <select alias="m1" column="subscriber_id"/>
+                    <from alias="m1" table="wgs_members"/>
+                    <from alias="s2" table="wgs_subscribers"/>
+                    <where condition="m1.subscriber_id = s2.subscriber_id"/>
+                    <where filter="m1.status"/>
+                </query>
+                <output>
+                    <data slug="member_id"/>
+                    <data slug="first_name"/>
+                    <data slug="last_name"/>
+                    <data slug="email"/>
+                    <data slug="group_name"/>
+                    <data slug="last_connection"/>
+                    <data slug="last_activation"/>
+                    <data slug="start_date"/>
+                    <data slug="status"/>
+                    <data slug="subscriber_id"/>
+                </output>
+                <columns>
+                    <column slug="cb" bind="member_id" />
+                    <column slug="last_name" sort="asc" primary="true">Member Name</column>
+                    <column slug="email" sort="asc">Email</column>
+                    <column slug="group_name" sort="asc">Group Name</column>
+                    <column slug="last_connection" sort="asc">Last Connection</column>
+                    <column slug="last_activation" sort="asc">Last Activation</column>
+                    <column slug="start_date" sort="asc">Start Date</column>
+                </columns>
+            </list>
+        </template>
+    </page>
+    <page parent="members" slug="edit-member">
+        <template bind="H4APlugin\WPGroupSubs\Admin\Members\Edit_Member">
+            <title auto="true"/>
+            <item ref="member"/>
+            <wp_ajax>
+                <function file="wp-group-subscriptions/admin/headings/members/Edit_Member.php" class="H4APlugin\WPGroupSubs\Admin\Members\Edit_Member" name="getNewPasswordByAjax" />
+            </wp_ajax>
+        </template>
+    </page>
+    <page slug="accounting">
+        <template>
+            <title>Accounting Overview</title>
+        </template>
+    </page>
+    <page parent="accounting" slug="subscribers">
+        <template bind="H4APlugin\WPGroupSubs\Admin\Accounting\Subscribers">
+            <title>Subscriber Accounts</title>
+            <list data="db" search="true" editable="true" class="H4APlugin\WPGroupSubs\Admin\Accounting\Subscribers_List_Table">
+                <item ref="subscriber" singular="subscriber" plural="subscribers" />
+                <views>
+                    <default>
+                        <bulk_actions>
+                            <action value="trash">Move to Trash</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="edit">Edit</action>
+                            <action value="trash">Move to Trash</action>
+                        </row>
+                    </default>
+                    <view slug="active" singular="Active" plural="Active">
+                        <bulk_actions>
+                            <action value="trash">Move to Trash</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="edit">Edit</action>
+                            <action value="trash">Move to Trash</action>
+                        </row>
+                    </view>
+                    <view slug="disabled" singular="Disabled" plural="Disabled">
+                        <bulk_actions>
+                            <action value="trash">Move to Trash</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="edit">Edit</action>
+                            <action value="trash">Move to Trash</action>
+                        </row>
+                    </view>
+                    <view slug="trash" singular="Trash" plural="Trash">
+                        <bulk_actions>
+                            <action value="untrash">Restore</action>
+                            <action value="delete">Delete Permanently</action>
+                        </bulk_actions>
+                        <row>
+                            <action value="untrash">Restore</action>
+                            <action value="delete">Delete Permanently</action>
+                        </row>
+                    </view>
+                </views>
+                <query>
+                    <select alias="s1" column="subscriber_id"/>
+                    <select alias="s1" column="email" search="true" slabel="Email"/>
+                    <select alias="s1" column="group_name" search="true" slabel="Group name"/>
+                    <select alias="s1" column="first_name" search="true" slabel="First name"/>
+                    <select alias="s1" column="last_name" search="true" slabel="Last name"/>
+                    <select alias="s1" column="plan_id"/>
+                    <select alias="p2" column="plan_name" search="true" slabel="Plan name"/>
+                    <select alias="s1" column="start_date"/>
+                    <select alias="s1" column="status"/>
+                    <select alias="s1" column="last_subscription_date"/>
+                    <from alias="s1" table="wgs_subscribers"/>
+                    <from alias="p2" table="wgs_plans"/>
+                    <where condition="s1.plan_id = p2.plan_id"/>
+                    <where filter="s1.status"/>
+                </query>
+                <output>
+                    <data slug="subscriber_id"/>
+                    <data slug="group_name"/>
+                    <data slug="first_name"/>
+                    <data slug="last_name"/>
+                    <data slug="plan_id"/>
+                    <data slug="plan_name"/>
+                    <data slug="start_date"/>
+                    <data slug="last_subscription_date"/>
+                    <data slug="status"/>
+                </output>
+                <columns>
+                    <column slug="cb" bind="subscriber_id" />
+                    <column slug="last_name" primary="true" sort="asc">Representative</column>
+                    <column slug="group_name" sort="asc">Group Name</column>
+                    <column slug="plan_name" sort="asc">Plan</column>
+                    <column slug="status" sort="asc">Status</column>
+                    <column slug="start_date" sort="asc">Start Date</column>
+                    <column slug="last_subscription_date" sort="asc">Last subscription</column>
+                </columns>
+            </list>
+        </template>
+    </page>
+    <page parent="accounting" slug="edit-subscriber">
+        <template bind="H4APlugin\WPGroupSubs\Admin\Accounting\Edit_Subscriber">
+            <title auto="true"/>
+            <item ref="subscriber" configInit="false" />
+            <wp_ajax>
+                <function file="wp-group-subscriptions/admin/headings/accounting/Edit_Subscriber.php" class="H4APlugin\WPGroupSubs\Admin\Accounting\Edit_Subscriber" name="getSubscriberFormContentByAjax" />
+                <function file="wp-group-subscriptions/admin/headings/accounting/Edit_Subscriber.php" class="H4APlugin\WPGroupSubs\Admin\Accounting\Edit_Subscriber" name="assignPaymentsByAjax" />
+                <function file="wp-group-subscriptions/admin/headings/accounting/Edit_Subscriber.php" class="H4APlugin\WPGroupSubs\Admin\Accounting\Edit_Subscriber" name="getSubscriberStatusContentByAjax" />
+                <function file="wp-group-subscriptions/admin/headings/accounting/Edit_Subscriber.php" class="H4APlugin\WPGroupSubs\Admin\Accounting\Edit_Subscriber" name="getPaymentsToAssignByAjax" />
+                <function file="wp-group-subscriptions/admin/headings/accounting/Edit_Subscriber.php" class="H4APlugin\WPGroupSubs\Admin\Accounting\Edit_Subscriber" name="getPlanTypeByAjax" />
+                <function file="wp-group-subscriptions/admin/headings/accounting/Edit_Subscriber.php" class="H4APlugin\WPGroupSubs\Admin\Accounting\Edit_Subscriber" name="getPlanPriceByAjax" />
+            </wp_ajax>
+        </template>
+    </page>
+    <page parent="accounting" slug="payments">
+        <template bind="H4APlugin\WPGroupSubs\Admin\Accounting\Payments">
+            <title>Payments</title>
+            <list data="db" class="H4APlugin\WPGroupSubs\Admin\Accounting\Payments_List_Table">
+                <item ref="payment" singular="payment" plural="payments"/>
+                <views>
+                    <view slug="assigned" singular="Assigned" plural="Assigned">
+                        <query>
+                            <select alias="p1" column="payment_id"/>
+                            <select alias="p1" column="payment_date"/>
+                            <select alias="p1" column="payment_status"/>
+                            <select alias="p1" column="amount"/>
+                            <select alias="s2" column="first_name"/>
+                            <select alias="s2" column="last_name"/>
+                            <select alias="s2" column="group_name"/>
+                            <select alias="p3" column="plan_name"/>
+                            <select alias="p1" column="payment_type"/>
+                            <select alias="p1" column="txn_id"/>
+                            <from alias="p1" table="wgs_payments" />
+                            <from alias="s2" table="wgs_subscribers" />
+                            <from alias="p3" table="wgs_plans" />
+                            <where condition="p1.subscriber_id = s2.subscriber_id"/>
+                            <where condition="p1.plan_id = p3.plan_id"/>
+                        </query>
+                        <output>
+                            <data slug="payment_id"/>
+                            <data slug="payment_status"/>
+                            <data slug="payment_date"/>
+                            <data slug="first_name"/>
+                            <data slug="last_name"/>
+                            <data slug="group_name"/>
+                            <data slug="amount"/>
+                            <data slug="plan_name"/>
+                            <data slug="payment_type"/>
+                            <data slug="txn_id"/>
+                        </output>
+                        <columns>
+                            <column slug="payment_id">Number</column>
+                            <column slug="payment_status">Status</column>
+                            <column slug="payment_date">Date</column>
+                            <column slug="subscriber">Subscriber account</column>
+                            <column slug="plan_name">Plan</column>
+                            <column slug="payment_type">Type</column>
+                        </columns>
+                    </view>
+                    <view slug="unassigned" singular="Unassigned" plural="Unassigned">
+                        <query>
+                            <select alias="p1" column="payment_id"/>
+                            <select alias="p1" column="payment_date"/>
+                            <select alias="p1" column="payment_status"/>
+                            <select alias="p1" column="amount"/>
+                            <select alias="p1" column="email"/>
+                            <select alias="p1" column="payment_type"/>
+                            <select alias="p1" column="txn_id"/>
+                            <from alias="p1" table="wgs_payments" />
+                            <where condition="p1.subscriber_id is null"/>
+                        </query>
+                        <output>
+                            <data slug="payment_id"/>
+                            <data slug="payment_status"/>
+                            <data slug="payment_date"/>
+                            <data slug="email"/>
+                            <data slug="payment_type"/>
+                            <data slug="amount"/>
+                            <data slug="txn_id"/>
+                        </output>
+                        <columns>
+                            <column slug="payment_id">Number</column>
+                            <column slug="payment_status">Status</column>
+                            <column slug="payment_date">Date</column>
+                            <column slug="email">Email</column>
+                            <column slug="amount">Amount</column>
+                            <column slug="payment_type">Type</column>
+                        </columns>
+                    </view>
+                </views>
+                <query>
+                    <select alias="p1" column="payment_id"/>
+                    <select alias="p1" column="payment_date"/>
+                    <select alias="p1" column="payment_status"/>
+                    <select alias="p1" column="amount"/>
+                    <select alias="p1" column="email"/>
+                    <select alias="p1" column="payment_type"/>
+                    <select alias="p1" column="txn_id"/>
+                    <select alias="p1" column="subscriber_id"/>
+                    <from alias="p1" table="wgs_payments" />
+                </query>
+                <output>
+                    <data slug="payment_id"/>
+                    <data slug="payment_status"/>
+                    <data slug="payment_date"/>
+                    <data slug="email"/>
+                    <data slug="amount"/>
+                    <data slug="payment_type"/>
+                    <data slug="txn_id"/>
+                    <data slug="subscriber_id"/>
+                </output>
+                <columns>
+                    <column slug="payment_id">Number</column>
+                    <column slug="payment_status">Status</column>
+                    <column slug="payment_date">Date</column>
+                    <column slug="email">Email</column>
+                    <column slug="amount">Amount</column>
+                    <column slug="payment_type">Type</column>
+                </columns>
+            </list>
+        </template>
+    </page>
+    <page parent="options-general.php" slug="settings-wp-group-subscriptions">
+        <title>Settings - WP Group Subscription</title>
+        <template bind="H4APlugin\WPGroupSubs\Admin\Settings\Currency" slug="currency">
+            <title>Currency</title>
+        </template>
+        <template bind="H4APlugin\WPGroupSubs\Admin\Settings\Paypal" slug="paypal">
+            <title>Paypal</title>
+        </template>
+        <template bind="H4APlugin\WPGroupSubs\Admin\Settings\ProfilePage" slug="profile-page">
+            <title>Profile Page</title>
+        </template>
+        <template bind="H4APlugin\WPGroupSubs\Admin\Settings\Premium" slug="premium">
+            <title>Premium</title>
+        </template>
+    </page>
+</pages>

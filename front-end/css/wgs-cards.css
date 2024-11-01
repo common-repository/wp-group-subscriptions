@@ -1,0 +1,94 @@
+.wgs-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+    width: inherit;
+}
+
+.wgs-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    width: 300px;
+    min-width: 200px;
+}
+
+.wgs-card-inline{
+    display: inline-flex;
+    margin: .75rem;
+}
+
+.wgs-card-block {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wgs-card-content{
+    padding: 1.25rem;
+}
+
+.wgs-card-tag{
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    left: 49.4%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding-bottom: 8px;
+    text-align: center;
+    min-width: 200px;
+    z-index: 2;
+}
+
+.wgs-card-tag-span{
+    background-color: #ff4546;
+    border-radius: .25rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+
+.wgs-card-tag-span::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #ff4546;
+    position: absolute;
+    bottom: -5px;
+    left: 51.2%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+
+h4.wgs-card-title{
+    margin: .75rem !important;
+    font-size: xx-large !important;
+    hyphens: none;
+}
+
+.wgs-card-text{
+    flex: 1;
+    hyphens: none;
+    margin-bottom: .75rem;
+    text-align: center !important;
+}
+
+.wgs-card-amount{
+    font-size: 1.5em;
+}
+
+.wgs-card-text small.wgs-info{
+    display: flex;
+    line-height: 20px;
+    justify-content: center;
+}

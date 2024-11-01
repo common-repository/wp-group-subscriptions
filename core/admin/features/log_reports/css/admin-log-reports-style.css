@@ -1,0 +1,45 @@
+/**
+ * Table of Contents
+ *
+ * 1 - Table
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1 - Table
+ */
+table.wp-list-table tbody td.column-level{
+    padding: 0;
+    vertical-align: middle;
+    position:relative;
+}
+
+table.wp-list-table tbody td span.row-level{
+    border-left: 4px solid #fff;
+    padding: 8px 10px;
+    display: block;
+    font-weight: 600;
+    color: #000;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+table.wp-list-table tbody td span.row-level-debug{
+    border-left-color: #eee;
+}
+
+table.wp-list-table tbody td span.row-level-info{
+    border-left-color: #00a0d2;
+}
+
+table.wp-list-table tbody td span.row-level-warning{
+    border-left-color: #CA4A1F;
+}
+
+table.wp-list-table tbody td span.row-level-error{
+    border-left-color: #dc3232;
+}
+

@@ -1,0 +1,52 @@
+/*
+WGS Front End CSS
+Description: Stylesheets for front-end pages using WGS HTML template.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Generic classes
+ * 2.0 - Tags classes
+ * 3.0 - Template page modification
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Generic classes
+ * -----------------------------------------------------------------------------
+ */
+
+.wgs-text-center{
+    text-align: center !important;
+}
+
+.h4a-right{
+    justify-content: flex-end !important;
+    flex-direction: row !important;
+}
+
+.h4a-left{
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+}
+
+/**
+ * 2.0 - Tags classes
+ * -----------------------------------------------------------------------------
+ */
+
+[role="button"], a, area, button, input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+/**
+ * 3.0 - Template page modification
+ * -----------------------------------------------------------------------------
+ */
+
+.wgs-form-page-template-default .edit-link{
+    display: none;
+}

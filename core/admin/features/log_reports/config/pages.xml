@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages xmlns="h4a:pages" xmlns:h4a="https://www.hive-4-apps.org/xml-shemas/pages.xsd">
+    <page parent="tools.php" slug="logs-{domain}">
+        <title>{initials} Log Reports</title>
+        <template slug="admin-report" bind="H4APlugin\Core\Admin\LogTemplate">
+            <title>Admin</title>
+            <list data="csv">
+                <item file="logs/admin.log" singular="log" plural="logs"/>
+                <columns>
+                    <column slug="level" sort="asc">Level</column>
+                    <column slug="date" sort="desc" primary="true">Date</column>
+                    <column slug="class">Class</column>
+                    <column slug="function">Function</column>
+                    <column slug="type">About</column>
+                    <column slug="message">Message</column>
+                </columns>
+            </list>
+        </template>
+        <template slug="users-report" bind="H4APlugin\Core\Admin\LogTemplate">
+            <title>Users</title>
+            <list data="csv">
+                <item file="logs/users.log" singular="log" plural="logs"/>
+                <columns>
+                    <column slug="level" sort="asc">Level</column>
+                    <column slug="date" sort="desc" primary="true">Date</column>
+                    <column slug="class">Class</column>
+                    <column slug="function">Function</column>
+                    <column slug="type">About</column>
+                    <column slug="message">Message</column>
+                </columns>
+            </list>
+        </template>
+    </page>
+</pages>

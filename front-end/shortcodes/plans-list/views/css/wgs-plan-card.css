@@ -1,0 +1,23 @@
+/*
+WGS Front End CSS
+Description: Stylesheets for front-end pages using wgs-plans shortcode.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - General
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - General
+ * -----------------------------------------------------------------------------
+ */
+
+.wgs-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

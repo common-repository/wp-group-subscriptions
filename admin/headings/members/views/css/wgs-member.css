@@ -1,0 +1,127 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Postboxes
+ * 2.0 - Password
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 - Postboxes
+ * -----------------------------------------------------------------------------
+ */
+#post-body .misc-pub-last-connection::before{
+    content: "\f112";
+    font: normal 20px/1 dashicons;
+}
+
+#post-body .misc-pub-last-activation::before{
+    content: "\f147";
+    font: normal 20px/1 dashicons;
+}
+
+#post-body .misc-pub-creation-date::before{
+    content: "\f508";
+    font: normal 20px/1 dashicons;
+}
+
+#post-body .misc-pub-current-plan::before{
+    content: "\f524";
+    font: normal 20px/1 dashicons;
+}
+
+#post-body .misc-pub-subscription-status::before{
+    content: "\f173";
+    font: normal 20px/1 dashicons;
+}
+
+#post-body .misc-pub-last-subscription::before{
+    content: "\f469";
+    font: normal 18px/1 dashicons;
+}
+
+#post-body .misc-pub-group-name::before{
+    content: "\f307";
+    font: normal 18px/1 dashicons;
+}
+
+/**
+ * 2.0 - Password
+ * -----------------------------------------------------------------------------
+ */
+
+#wgs-form-member-activation-account .h4a-section-wrappers .h4a-form-inline .h4a-form-group {
+    align-items: flex-start;
+}
+
+#wgs_f_password.strong, #pass1-text.strong {
+    border-color: #83c373;
+}
+
+#pass1-text, .show-password #wgs_f_password {
+    display: none;
+}
+
+.show-password #pass1-text {
+    display: inline-block;
+}
+
+@media screen and ( max-width: 960px ) {
+
+    .h4a-section-wrappers .h4a-form-inline .h4a-form-group {
+        width: 100%;
+    }
+
+    .h4a-form div.h4a-form-group input[type="text"],
+    .h4a-form div.h4a-form-group input[type="email"],
+    .h4a-form div.h4a-form-group input[type="password"]{
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 7px 10px;
+        display: block;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    #pass-strength-result {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+    }
+
+    /* New Password */
+    .wp-pwd {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .wp-pwd [type="text"],
+    .wp-pwd [type="password"] {
+        padding-right: 40px;
+    }
+
+    .wp-pwd button.button {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        line-height: 2;
+        margin: 0;
+        padding: 5px 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: auto;
+    }
+
+    .wp-pwd button.button:hover,
+    .wp-pwd button.button:focus,
+    .wp-pwd button.button:active {
+        background: transparent;
+    }
+
+    .wp-pwd .button .text {
+        display: none;
+    }
+}
